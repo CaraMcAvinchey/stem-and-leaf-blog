@@ -49,8 +49,8 @@ class Plant(models.Model):
 
     plant_thirst = models.DecimalField(
         null=True,
-        decimal_places=1,
-        max_digits=3,
+        decimal_places=0,
+        max_digits=1,
     )
 
     class Meta:

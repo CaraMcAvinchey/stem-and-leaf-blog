@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto+Condensed:wght@300&display=swap');
+
 body {
     background-color: #F9FAFC;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
+ h1, h2, h3, h4, h5, h6 {
+    font-family: 'Amatic SC', cursive;
+ }
+
 .brand {
-    font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
+.logo {
+    font-size: 2.5rem;
+    font-family: 'Amatic SC', cursive;
+    color: red;
 }
 
 .thin {
