@@ -31,6 +31,10 @@ body {
 
 }
 
+.nav-item {
+    justify-content: right;
+}
+
 /* background colors */
 
 .light-bg {

@@ -5,7 +5,7 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Blog Entries Column -->
+        <!-- blog entries column -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for plant in plant_list %}
@@ -15,7 +15,7 @@
                             <div class="image-container">
                                 {% if "placeholder" in plant.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+                                    src="../static/images/leaf-placeholder-square.jpg">
                                 {% else %}
                                 <img class="card-img-top" src=" {{ plant.featured_image.url }}">
                                 {% endif %}

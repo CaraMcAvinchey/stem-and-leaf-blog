@@ -19,15 +19,17 @@
 
 <body class="d-flex flex-column h-100 main-bg">
 
-    <!-- Navigation -->
+    <!-- navigation -->
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="{% url 'home' %}"><i class="fa-brands fa-pagelines"></i>
                 <h1>Stem & Leaf |</h1>
-                <p class="blog-description">a plant care space for beginners</p>
+                <div class="container">
+                    <p>a plant care space</p>
+                    <p>for beginners</p>
+                </div>
             </a>
-            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,11 +58,11 @@
 
     <main class="flex-shrink-0 main-bg">
         {% block content %}
-        <!-- Content Goes here -->
+        <!-- blog content -->
         {% endblock content %}
     </main>
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-1 text-center text-white footer-desc">Made by Cara McAvinchey</p>
         <p class="m-1 text-center text-white footer-desc">Follow for more plant care tips!</p>
