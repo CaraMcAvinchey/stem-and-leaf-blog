@@ -23,7 +23,11 @@
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand logo" href="{% url 'home' %}"><i class="fa-brands fa-pagelines"></i>  Stem & Leaf  | </a>
+            <a class="navbar-brand logo" href="{% url 'home' %}"><i class="fa-brands fa-pagelines"></i>
+                <h1>Stem & Leaf |</h1>
+                <p class="blog-description">a plant care space for beginners</p>
+            </a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,9 +50,6 @@
                     </li>
                     {% endif %}
                 </ul>
-                <span class="navbar-text text-muted">
-                    a plant care space for beginners
-                </span>
             </div>
         </div>
     </nav>
@@ -61,21 +62,21 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-1 text-center text-white">Made by Cara McAvinchey</p>
-        <p class="m-1 text-center text-white">Follow for more plant care tips!</p>
+        <p class="m-1 text-center text-white footer-desc">Made by Cara McAvinchey</p>
+        <p class="m-1 text-center text-white footer-desc">Follow for more plant care tips!</p>
         <p class="m-1 text-center">
             <a href="https://www.facebook.com/" target="_blank" rel="noopener"
                 aria-label="Visit our Facebook page (opens in new tab)"><i
-                    class="fab fa-facebook ms-3 text-white"></i></a>
+                    class="socials fab fa-facebook ms-3 text-white"></i></a>
             <a href="https://www.twitter.com/" target="_blank" rel="noopener"
                 aria-label="Visit our Twitter page (opens in new tab)"><i
-                    class="fab fa-twitter ms-3 text-white"></i></a>
+                    class="socials fab fa-twitter ms-3 text-white"></i></a>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener"
                 aria-label="Visit our Instagram account (opens in new tab)"><i
-                    class="fab fa-instagram ms-3 text-white"></i></a>
+                    class=" socials fab fa-instagram ms-3 text-white"></i></a>
             <a href="https://www.youtube.com/" target="_blank" rel="noopener"
                 aria-label="Visit our YouTube channel (opens in new tab)"><i
-                    class="fab fa-youtube ms-3 text-white"></i></a>
+                    class="socials fab fa-youtube ms-3 text-white"></i></a>
         </p>
     </footer>
 

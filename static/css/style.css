@@ -7,35 +7,45 @@ body {
 
  h1, h2, h3, h4, h5, h6 {
     font-family: 'Amatic SC', cursive;
- }
-
-.brand {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
 }
+
+/* navigation */
 
 .logo {
     font-size: 2.5rem;
     font-family: 'Amatic SC', cursive;
-    color: red;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.thin {
-    font-weight: 300;
+.logo h1, i {
+    color: #445261;
 }
+
+.logo p {
+    margin-bottom: 0;
+    color: #445261;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+/* background colors */
 
 .light-bg {
-    background-color: #fff;
+    background-color: #F8FBEB;
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #8B9569;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #F8FFF8;
 }
+
+/* blog posts */
 
 .card {
     border: none;
@@ -51,11 +61,11 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #C1DC76;
 }
 
 .author {
-    color: white;
+    color: #F8FBEB;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -71,7 +81,7 @@ body {
 
 .masthead-text {
     background-color: #445261;
-    color: white;
+    color: #F8FBEB;
     position: relative;
 }
 
@@ -101,7 +111,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #8B9569;
 }
 
 .post-title {
@@ -147,4 +157,20 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+/* footer */
+
+footer a {
+    font-size: 1.4rem;
+}
+
+.footer-desc {
+    font-size: 1.2rem;
+
+}
+
+.socials:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
 }
