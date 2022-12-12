@@ -65,7 +65,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #C1DC76;
+    background-color: #8B9569;
 }
 
 .author {
@@ -128,19 +128,21 @@ body {
     color: lightgray;
 }
 
+/* buttons */
+
 .btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
+    background-color:#8B9569;
+    color: #F8FBEB;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color:#445261;
+    color:#F8FBEB;
 }
 
 .link {
-    color: #23BBBB;
+    color: #8B9569;
     text-decoration: none;
 }
 
@@ -170,7 +172,7 @@ footer a {
 }
 
 .footer-desc {
-    font-size: 1.2rem;
+    font-size: 1rem;
 
 }
 
