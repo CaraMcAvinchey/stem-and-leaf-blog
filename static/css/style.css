@@ -53,7 +53,7 @@ body {
     background-color: #F8FFF8;
 }
 
-/* blog post list card */
+/* blog post-list card */
 
 .card {
     border: none;
@@ -150,10 +150,16 @@ body {
     color: #F8FBEB;
 }
 
-.btn-signup:hover,
-.btn-signup:active {
-    background-color:#445261;
-    color:#F8FBEB;
+.btn-signup:hover {
+    color: #F8FBEB;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.btn-signup:focus {
+    box-shadow: 
+    0 0 0 5px #F8FBEB,
+    0 0 0 10px #445261;
 }
 
 .link {
@@ -161,10 +167,16 @@ body {
     text-decoration: none;
 }
 
-.link:hover,
-.link:active {
+.link:hover {
     color: #445261;
     text-decoration: underline;
+}
+
+.link:focus {
+    color: #F8FBEB;
+    box-shadow: 
+    0 0 0 5px #F8FBEB,
+    0 0 0 10px #445261;
 }
 
 .btn-like {
