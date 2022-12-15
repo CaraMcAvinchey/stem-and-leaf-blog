@@ -82,6 +82,16 @@ body {
     color:#445261;
 }
 
+.post-link {
+    text-decoration: none;
+    color: #445261;
+}
+
+.post-link:hover,
+.page-link {
+    color: #8B9569;
+}
+
 /* blog post */
 
 .masthead {
@@ -118,24 +128,19 @@ body {
     z-index: 100;
 }
 
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #8B9569;
-}
-
 .post-title {
-    margin-top: 20%;
+    margin-top: 3%;
     margin-left: 5%;
 }
 
-.post-subtitle {
+.post-date, .post-icon {
     margin-left: 5%;
-    color: lightgray;
+    color: #F8FBEB;
+}
+
+.post-icon i {
+    color: #F8FBEB;
+    margin-left: 1rem;
 }
 
 /* buttons */

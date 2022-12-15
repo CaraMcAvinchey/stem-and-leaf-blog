@@ -25,12 +25,12 @@
                             </div>
                             <a href="{% url 'post_detail' plant.slug  %}" class="post-link">
                                 <h2 class="card-title">{{ plant.title }}</h2>
-                                <p class="card-text">{{ plant.excerpt }}</p>
-                                <p class="card-text card-icon"><i class="fa-brands fa-envira"></i> {{ plant.get_plant_level_display }}</p>
-                                <p class="card-text card-icon"><i class="fa-regular fa-sun"></i> {{ plant.get_plant_light_display }}</p>
-                                <p class="card-text card-icon"><i class="fa-solid fa-droplet"></i> {{ plant.plant_thirst }}/3</p>
                             </a>
-                            <hr />
+                            <p class="card-text">{{ plant.excerpt }}</p>
+                                <p class="card-text card-icon"><i class="fa-brands fa-envira"></i> {{ plant.get_plant_level_display }}.</p>
+                                <p class="card-text card-icon"><i class="fa-regular fa-sun"></i> {{ plant.get_plant_light_display }}.</p>
+                                <p class="card-text card-icon"><i class="fa-solid fa-droplet"></i> {{ plant.plant_thirst }}/3</p>
+                            <hr/>
                             <p class="card-text text-muted h6">{{ plant.created_on}} <i class="far fa-heart"></i>
                                 {{ plant.number_of_likes }}</p>
                         </div>

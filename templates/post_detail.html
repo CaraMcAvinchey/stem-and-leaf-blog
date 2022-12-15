@@ -4,14 +4,17 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
-                <h1 class="post-title">{{ post.title }}</h1>
-                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
+                <h1 class="post-title">{{ plant.title }}</h1>
+                <p class="card-text post-icon"><i class="fa-brands fa-envira"></i> {{ plant.get_plant_level_display }}.</p>
+                <p class="card-text post-icon"><i class="fa-regular fa-sun"></i> {{ plant.get_plant_light_display }}.</p>
+                <p class="card-text post-icon"><i class="fa-solid fa-droplet"></i> {{ plant.plant_thirst }}/3</p>
+                <p class="post-date">{{ plant.author }} | {{ plant.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                {% if "placeholder" in post.featured_image.url %}
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
+                {% if "placeholder" in plant.featured_image.url %}
+                <img src="../static/images/leaf-placeholder-square.jpg" width="100%">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%">
+                <img src=" {{ plant.featured_image.url }}" width="100%">
                 {% endif %}
             </div>
         </div>
@@ -23,12 +26,12 @@
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
                 <p class="card-text ">
-                    {{ post.content | safe }}
+                    {{ plant.content | safe }}
                 </p>
                 <div class="row">
 
                     <div class="col-1">
-                        <strong class="text-secondary"><i class="far fa-heart"></i> {{ post.number_of_likes }} </strong>
+                        <strong class="text-secondary"><i class="far fa-heart"></i> {{ plant.number_of_likes }} </strong>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
