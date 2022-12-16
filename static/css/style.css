@@ -133,7 +133,7 @@ body {
     margin-left: 5%;
 }
 
-/* buttons */
+/* links and buttons */
 
 .btn-signup {
     background-color:#8B9569;
@@ -180,6 +180,10 @@ body {
     color: #445261;
     background: transparent;
     border: none;
+}
+
+.btn-form {
+    margin-top: 3%;
 }
 
 /* footer */
