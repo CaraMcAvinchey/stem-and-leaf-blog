@@ -60,6 +60,10 @@ body {
     background-color: transparent;
 }
 
+.card-excerpt {
+    font-weight: bold;
+}
+
 .image-container {
     position: relative;
 }
@@ -79,7 +83,7 @@ body {
 }
 
 .card-icon i {
-    color:#445261;
+    color:#8B9569;
 }
 
 .post-link {
@@ -131,6 +135,10 @@ body {
 .post-title, .post-date, .post-icon {
     margin-top: 2%;
     margin-left: 5%;
+}
+
+.icon i {
+    color:#445261
 }
 
 /* links and buttons */
