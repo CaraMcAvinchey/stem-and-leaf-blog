@@ -30,7 +30,7 @@ body {
 .nav-item a {
     font-family: 'Amatic SC', cursive;
     font-size: 1.5rem;
-    color: #F8FBEB;
+    color: #F8FBEB !important;
 }
 
 .nav-link:hover {
@@ -128,19 +128,9 @@ body {
     z-index: 100;
 }
 
-.post-title {
-    margin-top: 3%;
+.post-title, .post-date, .post-icon {
+    margin-top: 2%;
     margin-left: 5%;
-}
-
-.post-date, .post-icon {
-    margin-left: 5%;
-    color: #F8FBEB;
-}
-
-.post-icon i {
-    color: #F8FBEB;
-    margin-left: 1rem;
 }
 
 /* buttons */
@@ -180,14 +170,14 @@ body {
 }
 
 .btn-like {
-    color: #E84610;
+    color: #8B9569;
     border: none;
     background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
+    color: #445261;
     background: transparent;
     border: none;
 }
@@ -206,4 +196,11 @@ footer a {
 .socials:hover {
     transform: scale(1.2);
     transition: 0.4s;
+}
+
+/* media queries */
+
+/* unfolded phones (mobile phones, 320px and bigger) */
+@media (min-width: 320px) {
+    
 }

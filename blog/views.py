@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from .models import Plant
+from .forms import CommentForm
 
 
 class PlantList(generic.ListView):
@@ -26,6 +27,7 @@ class PlantDetail(View):
                 "plant": plant,
                 "comments": comments,
                 "commented": False,
-                "liked": liked
+                "liked": liked,
+                "comment_form": CommentForm()
             },
         )
