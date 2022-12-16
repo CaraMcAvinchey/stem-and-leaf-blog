@@ -6,10 +6,10 @@
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
                 <h1 class="post-title">{{ plant.title }}</h1>
-                <p class="card-text post-icon"><i class="fa-brands fa-envira"></i> {{ plant.get_plant_level_display }}.
+                <p class="card-text plant-icon"><i class="fa-brands fa-envira"></i> {{ plant.get_plant_level_display }}.
                 </p>
-                <p class="card-text post-icon"><i class="fa-solid fa-sun"></i> {{ plant.get_plant_light_display }}.</p>
-                <p class="card-text post-icon"><i class="fa-solid fa-droplet"></i> {{ plant.plant_thirst }}/3</p>
+                <p class="card-text plant-icon"><i class="fa-solid fa-sun"></i> {{ plant.get_plant_light_display }}.</p>
+                <p class="card-text plant-icon"><i class="fa-solid fa-droplet"></i> {{ plant.plant_thirst }}/3</p>
                 <p class="post-date">{{ plant.author }} | {{ plant.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
@@ -33,12 +33,12 @@
                 <div class="row">
 
                     <div class="col-1">
-                        <strong class="text-secondary icon"><i class="fa-solid fa-heart"></i> {{ plant.number_of_likes }}
+                        <strong class="text-secondary post-icon"><i class="fa-solid fa-heart"></i> {{ plant.number_of_likes }}
                         </strong>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
-                        <strong class="text-secondary icon"><i class="fa-solid fa-comment"></i>
+                        <strong class="text-secondary post-icon"><i class="fa-solid fa-comment"></i>
                             {{ total_comments }}</strong>
                         {% endwith %}
                     </div>

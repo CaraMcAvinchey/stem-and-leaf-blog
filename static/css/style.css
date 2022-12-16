@@ -132,12 +132,12 @@ body {
     z-index: 100;
 }
 
-.post-title, .post-date, .post-icon {
+.post-title, .post-date, .plant-icon {
     margin-top: 2%;
     margin-left: 5%;
 }
 
-.icon i {
+.post-icon i {
     color:#445261
 }
 
