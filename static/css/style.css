@@ -103,7 +103,7 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    height: 36vh;
     width: 100%;
 }
 
@@ -192,6 +192,12 @@ body {
 
 .btn-form {
     margin-top: 3%;
+}
+
+.card-body a {
+    color: #8B9569;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* footer */
