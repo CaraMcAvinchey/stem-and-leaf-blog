@@ -93,10 +93,10 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #8B9569;
+    color: #445261;
 }
 
-/* blog post */
+/* blog post content */
 
 .masthead {
     margin-top: 10px;
@@ -177,17 +177,17 @@ body {
     0 0 0 10px #445261;
 }
 
-.btn-like {
-    color: #8B9569;
+.no-border, .btn-like i {
+    color: #445261;
     border: none;
     background: transparent;
 }
 
-.btn-like:hover,
-.btn-like:active {
+.no-border .btn-like:hover,
+.no-border .btn-like:active {
     color: #445261;
-    background: transparent;
     border: none;
+    background: transparent;
 }
 
 .btn-form {
