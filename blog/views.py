@@ -1,8 +1,11 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from .models import Plant
 from .forms import CommentForm
+
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 class PlantList(generic.ListView):
@@ -12,7 +15,7 @@ class PlantList(generic.ListView):
     paginate_by = 6
 
 
-class PlantDetail(View):
+class PlantDetail(SuccessMessageMixin, View):
 
     def get(self, request, slug, *args, **kwargs):
         queryset = Plant.objects.filter(status=1)
@@ -49,6 +52,8 @@ class PlantDetail(View):
             comment = comment_form.save(commit=False)
             comment.post = plant
             comment.save()
+            messages.success(request,
+                             'Your comment has been uploaded successfully.')
         else:
             comment_form = CommentForm()
 

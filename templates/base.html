@@ -20,7 +20,6 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- navigation -->
-
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark dark-bg">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="{% url 'home' %}"><i class="fa-brands fa-pagelines"></i>
@@ -56,6 +55,20 @@
         </div>
     </nav>
 
+    <!-- messages and alerts -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
     <main class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- blog content -->
@@ -84,6 +97,15 @@
 
     <!--font awesome script-->
     <script src="https://kit.fontawesome.com/7cf492ae91.js" crossorigin="anonymous"></script>
+
+    <!--message alert script-->
+    <script>
+        setTimeout(function () {
+            let messages = document.getElementById('msg');
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 3000);
+    </script>
 
 </body>
 

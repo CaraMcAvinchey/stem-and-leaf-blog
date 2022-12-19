@@ -32,7 +32,7 @@
                     {{ plant.content | safe }}
                 </p>
                 <div class="row">
-
+                    <!-- likes function -->
                     <div class="col-1">
                         <strong>
                             {% if user.is_authenticated %}
@@ -47,10 +47,10 @@
                             {% else %}
                             <span class="text-secondary no-border"><i class="fa-regular fa-heart"></i></span>
                             {% endif %}
-                        <!-- The number of likes goes before the closing strong tag -->
                         <span class="text-secondary">{{ plant.number_of_likes }} </span>
                         </strong>
                     </div>
+                    <!-- comments function -->
                     <div class="col-1">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary post-icon"><i class="fa-solid fa-comment"></i>
