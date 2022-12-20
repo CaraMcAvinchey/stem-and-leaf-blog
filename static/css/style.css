@@ -103,7 +103,7 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 36vh;
+    /* height: 36vh; */
     width: 100%;
 }
 
@@ -154,12 +154,6 @@ body {
     transition: 0.5s;
 }
 
-.btn-signup:focus {
-    box-shadow: 
-    0 0 0 5px #F8FBEB,
-    0 0 0 10px #445261;
-}
-
 .link {
     color: #8B9569;
     text-decoration: none;
@@ -168,13 +162,6 @@ body {
 .link:hover {
     color: #445261;
     text-decoration: underline;
-}
-
-.link:focus {
-    color: #F8FBEB;
-    box-shadow: 
-    0 0 0 5px #F8FBEB,
-    0 0 0 10px #445261;
 }
 
 .no-border, .btn-like i {
@@ -191,7 +178,7 @@ body {
 }
 
 .btn-form {
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 .card-body a {

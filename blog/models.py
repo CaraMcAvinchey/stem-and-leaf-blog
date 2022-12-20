@@ -1,12 +1,16 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
-from django.core.validators import MaxValueValidator, MinValueValidator
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Plant(models.Model):
+    """
+    Django model for the information stored
+    for each plant type. 
+    """
+
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -64,6 +68,10 @@ class Plant(models.Model):
 
 
 class Comment(models.Model):
+    """
+    Django model for the information stored
+    for each comment.
+    """
     post = models.ForeignKey(
         Plant, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=80)

@@ -2,8 +2,11 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-from .models import Plant
-from .forms import CommentForm
+from django.views.generic import DeleteView, UpdateView
+from django.utils.decorators import method_decorator
+from django.contrib.auth.decorators import login_required
+from .models import Plant, Comment
+from .forms import CommentForm, EditForm
 
 from django.contrib.messages.views import SuccessMessageMixin
 
@@ -80,3 +83,50 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+# comments delete and edit functions
+
+
+@method_decorator(login_required, name="dispatch")
+class CommentDelete(DeleteView):
+    """
+    If user is logged in:
+    Direct user to delete_comment.html template
+    User will be prompted with a message to confirm.
+    """
+    model = Comment
+    template_name = "delete_comment.html"
+
+    def delete(self, request, *args, **kwargs):
+        return super(CommentDelete, self).delete(request, *args, **kwargs)
+
+    def get_success_url(self, *args, **kwargs):
+        PlantDetail.comment_deleted = True
+        return reverse("plant_detail", kwargs={"slug": self.object.plant.slug})
+
+
+@method_decorator(login_required, name="dispatch")
+class CommentEdit(UpdateView):
+    """
+    If user is logged in:
+    Direct user to update_comment.html template,
+    displaying ReviewForm for that specific review.
+    Post edited info back to the DB and return user to post.
+    """
+    model = Comment
+    form_class = EditForm
+    template_name = "edit_comment.html"
+
+    def form_valid(self, form):
+        """
+        Upon success prompt the user with a success message.
+        """
+        super().form_valid(form)
+        return HttpResponseRedirect(self.get_success_url())
+
+    def get_success_url(self, *args, **kwargs):
+        """
+        Upon success returns user to the stock detail page.
+        """
+        PlantDetail.comment_edited = True
+        return reverse("post_detail", kwargs={"slug": self.object.plant.slug})
