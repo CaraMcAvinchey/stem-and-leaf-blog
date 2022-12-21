@@ -141,14 +141,20 @@ body {
     color:#445261
 }
 
-/* links and buttons */
-
-.btn-signup {
-    background-color:#8B9569;
-    color: #F8FBEB;
+.comments {
+    padding: 10px;
+    margin: 10px;
 }
 
-.btn-signup:hover {
+/* links and buttons */
+
+.btn-signup, .btn-edit {
+    background-color:#8B9569;
+    color: #F8FBEB;
+    margin: 2px;
+}
+
+.btn-signup:hover,.btn-edit:hover {
     color: #F8FBEB;
     transform: scale(1.1);
     transition: 0.5s;
@@ -175,10 +181,6 @@ body {
     color: #445261;
     border: none;
     background: transparent;
-}
-
-.btn-form {
-    margin-top: 2%;
 }
 
 .card-body a {

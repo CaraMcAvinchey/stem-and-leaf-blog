@@ -2,19 +2,18 @@
 
 {% block content %}
 <div class="container">
-    <div class="card-container my-5 w-50 m-auto">
+    <div class="card-container my-5">
         <div class="col-12">
-        <!--Prompt the user for confirmation when deleting review entry-->
-        <form method="POST" action=".">
-            {% csrf_token %}
-            <h3 class="fw-bold fs-3">Are you sure you want to delete your comment?</h3>
-            <div class="text-center">
-                <input class="btn btn-post-comment my-3 w-25" type="submit" value="Yes" /> 
-            </div>
-            <div class="text-center">
-                <a class="btn no btn-post-comment my-3 w-25" href="/">Homepage</a>
-            </div>
-        </form>
+            <form method="POST" action=".">
+                {% csrf_token %}
+                <h3 class="text-center">Are you sure you want to delete your comment?</h3>
+                <div class="text-center">
+                    <input class="btn btn-signup btn-md mt-2" type="submit" value="Yes!" /> 
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-signup btn-md mt-2" href="/">No, go back!</a>
+                </div>
+            </form>
         </div>
     </div>
 </div>

@@ -102,7 +102,7 @@ class CommentDelete(DeleteView):
 
     def get_success_url(self, *args, **kwargs):
         PlantDetail.comment_deleted = True
-        return reverse("plant_detail", kwargs={"slug": self.object.plant.slug})
+        return reverse("post_detail", kwargs={"slug": self.object.post.slug})
 
 
 @method_decorator(login_required, name="dispatch")
@@ -129,4 +129,4 @@ class CommentEdit(UpdateView):
         Upon success returns user to the stock detail page.
         """
         PlantDetail.comment_edited = True
-        return reverse("post_detail", kwargs={"slug": self.object.plant.slug})
+        return reverse("post_detail", kwargs={"slug": self.object.post.slug})

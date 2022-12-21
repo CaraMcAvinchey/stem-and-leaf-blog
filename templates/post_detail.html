@@ -75,30 +75,27 @@
             <div class="row">
                 <div class="card-container col-lg-8 mb-4 mt-3">
                     <h3>Comments:</h3>
-                    <div class="comments-card">
+                    <div>
                         <!-- if there is at least one comment -->
                         {% if comments %}
                         <!-- for loop to iterate through comments -->
                         {% for comment in comments %}
                         <div class="comments">
                             <!-- body of the comment -->
-                            {{ comment.body | linebreaksbr }}
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <p>
-                                        {{ comment.name }} on
-                                        <span>
-                                            {{ comment.created_on }}
-                                        </span>
-                                    </p>
-                                </div>
+                            <div>
+                                {{ comment.body | linebreaksbr }}
+                            </div>
+                            <div>
+                                <p class="post-icon mt-1"><i class="fa-solid fa-user pr-1"></i> {{ comment.name }}
+                                    on <span>{{ comment.created_on }}</span>
+                                </p>
+                            </div>
+                            <div>
                                 {% if comment.name == request.user.username %}
-                                <div class="col-md-2">
-                                    <a class="btn btn-submit btn-edit fw-bold"
+                                <div class="col-sm mt-1">
+                                    <a class="btn btn-sm btn-edit"
                                         href="{% url 'edit_comment' plant.slug comment.pk %}">Edit</a>
-                                </div>
-                                <div class="col-md-2">
-                                    <a class="btn btn-submit btn-delete fw-bold"
+                                    <a class="btn btn-sm btn-edit"
                                         href="{% url 'delete_comment' plant.slug comment.pk %}">Delete</a>
                                 </div>
                                 {% endif %}
@@ -142,7 +139,7 @@
                         <form method="post">
                             {{ comment_form | crispy }}
                             {% csrf_token %}
-                            <button type="submit" class="btn btn-signup btn-lg btn-form">Submit</button>
+                            <button type="submit" class="btn btn-signup btn-md mt-2">Submit</button>
                         </form>
                     </div>
                     {% endif %}
