@@ -5,7 +5,7 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- blog entries column -->
+        <!-- blog entries -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for plant in plant_list %}
@@ -37,10 +37,10 @@
                             <!-- post likes count -->
                             <p class="card-icon"><i class="fa-solid fa-heart"></i> {{ plant.number_of_likes }}</p>
                             <!-- post comments count -->
-                            <p class="col-1">
+                            <p class="card-icon">
                                 {% with comments.count as total_comments %}
-                                <strong class="text-secondary card-icon"><i class="fa-solid fa-comment"></i>
-                                    {{ total_comments }}</strong>
+                                <strong class="text-secondary"><i class="fa-solid fa-comment"></i>
+                                    {{ plant.total_comments }}</strong>
                                 {% endwith %}
                             </p>
                         </div>

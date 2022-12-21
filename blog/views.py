@@ -84,8 +84,6 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-# comments delete and edit functions
-
 
 @method_decorator(login_required, name="dispatch")
 class CommentDelete(DeleteView):

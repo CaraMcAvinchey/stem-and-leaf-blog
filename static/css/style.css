@@ -99,11 +99,11 @@ body {
 /* blog post content */
 
 .masthead {
-    margin-top: 10px;
+    margin-top: 1.5rem;
     overflow: hidden;
     position: relative;
     display: inline-block;
-    /* height: 36vh; */
+    height: auto;
     width: 100%;
 }
 
@@ -118,7 +118,7 @@ body {
     overflow: hidden;
 }
 
-.masthead-image:after {
+/* .masthead-image:after {
     content: "";
     position: absolute;
     top: 0;
@@ -130,10 +130,10 @@ body {
     -moz-transform: skew(15deg);
     transform: skew(15deg);
     z-index: 100;
-}
+} */
 
 .post-title, .post-date, .plant-icon {
-    margin-top: 2%;
+    margin-top: 3%;
     margin-left: 5%;
 }
 
