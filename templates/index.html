@@ -38,9 +38,9 @@
                             <p class="card-icon"><i class="fa-solid fa-heart"></i> {{ plant.number_of_likes }}</p>
                             <!-- post comments count -->
                             <p class="card-icon">
-                                {% with comments.count as total_comments %}
+                                {% with plant.comments.count as total_comments %}
                                 <strong class="text-secondary"><i class="fa-solid fa-comment"></i>
-                                    {{ plant.total_comments }}</strong>
+                                    {{ total_comments }}</strong>
                                 {% endwith %}
                             </p>
                         </div>
