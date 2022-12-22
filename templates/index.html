@@ -34,13 +34,12 @@
                                 {{ plant.plant_thirst }}/3</p>
                             <hr />
                             <p class="card-text text-muted h6">{{ plant.created_on}}</p>
-                            <!-- post likes count -->
-                            <p class="card-icon"><i class="fa-solid fa-heart"></i> {{ plant.number_of_likes }}</p>
-                            <!-- post comments count -->
                             <p class="card-icon">
+                                <!-- post likes count -->
+                                <span class="p-1"><i class="fa-solid fa-heart"></i> {{ plant.number_of_likes }}</span>
+                                <!-- post comments count -->
                                 {% with plant.comments.count as total_comments %}
-                                <strong class="text-secondary"><i class="fa-solid fa-comment"></i>
-                                    {{ total_comments }}</strong>
+                                <span class="p-1"><i class="fa-solid fa-comment"></i> {{ total_comments }}</span>
                                 {% endwith %}
                             </p>
                         </div>
@@ -63,7 +62,6 @@
             {% endif %}
             {% if page_obj.has_next %}
             <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
-
             {% endif %}
         </ul>
     </nav>

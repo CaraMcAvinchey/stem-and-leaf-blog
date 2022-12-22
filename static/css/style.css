@@ -157,11 +157,12 @@ h6 {
     background: transparent;
 }
 
-.no-border .btn-like:hover,
-.no-border .btn-like:active {
+.btn-like>i:hover {
     color: #445261;
     border: none;
     background: transparent;
+    transform: scale(1.2);
+    transition: 0.4s;
 }
 
 .card-body a {

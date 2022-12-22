@@ -32,32 +32,28 @@
                 <p class="card-text">
                     {{ plant.content | safe }}
                 </p>
-                <div class="row">
-                    <!-- likes section -->
-                    <div class="col-1 m-2 p-2">
-                        {% if user.is_authenticated %}
-                        <form class="d-inline" action="{% url 'post_like' plant.slug %}" method="POST">
-                            {% csrf_token %}
-                            {% if liked %}
-                            <button type="submit" name="blogpost_id" value="{{plant.slug}}"
-                                class="btn-like no-border"><i class="fa-solid fa-heart"></i></button>
-                            {% else %}
-                            <button type="submit" name="blogpost_id" value="{{plant.slug}}"
-                                class="btn-like no-border"><i class="fa-regular fa-heart"></i></button>
-                            {% endif %}
-                        </form>
+                <div>
+                    <!-- post likes counter -->
+                    {% if user.is_authenticated %}
+                    <form class="d-inline" action="{% url 'post_like' plant.slug %}" method="POST">
+                        {% csrf_token %}
+                        {% if liked %}
+                        <button type="submit" name="blogpost_id" value="{{plant.slug}}" class="btn-like no-border"><i
+                                class="fa-solid fa-heart"></i></button>
                         {% else %}
-                        <p class="text-secondary no-border"><i class="fa-regular fa-heart"></i></p>
+                        <button type="submit" name="blogpost_id" value="{{plant.slug}}" class="btn-like no-border"><i
+                                class="fa-regular fa-heart"></i></button>
                         {% endif %}
-                        <p class="text-secondary">{{ plant.number_of_likes }} </p>
-                    </div>
+                        {% else %}
+                        <span class="btn-like no-border"><i class="fa-solid fa-heart"></i></span>
+                        {% endif %}
+                        {{ plant.number_of_likes }}
+                    </form>
+
                     <!-- post comments count -->
-                    <div class="col-1 m-2 p-2">
-                        {% with comments.count as total_comments %}
-                        <p class="text-secondary post-icon"><i class="fa-solid fa-comment"></i>
-                            {{ total_comments }}</p>
-                        {% endwith %}
-                    </div>
+                    {% with comments.count as total_comments %}
+                    <span class="btn-like m-1"><i class="fa-solid fa-comment m-1"></i> {{ total_comments }}</span>
+                    {% endwith %}
                 </div>
             </div>
         </div>
