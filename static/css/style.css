@@ -111,7 +111,7 @@ h6 {
 .post-title,
 .post-date,
 .plant-icon {
-    margin-top: 2%;
+    margin-top: 3%;
     margin-left: 5%;
 }
 
@@ -204,6 +204,10 @@ footer a {
         transform: scale(1.1);
         transition: 0.4s;
         color: #F8FBEB;
+    }
+
+    .summary-card {
+        height: 280px;
     }
 
 }

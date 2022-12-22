@@ -5,7 +5,7 @@
 <div class="masthead">
     <!-- plant blog post summary card -->
     <div class="container">
-        <div class="row g-0">
+        <div class="row g-0 summary-card">
             <div class="col-md-6 masthead-text">
                 <h1 class="post-title">{{ plant.title }}</h1>
                 <p class="card-text plant-icon"><i class="fa-brands fa-envira"></i> {{ plant.get_plant_level_display }}.
@@ -16,9 +16,9 @@
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 {% if "placeholder" in plant.featured_image.url %}
-                <img src="../static/images/leaf-placeholder-square.jpg" width="100%">
+                <img class="img-responsive" src="../static/images/leaf-placeholder-square.jpg" width="100%">
                 {% else %}
-                <img src=" {{ plant.featured_image.url }}" width="100%">
+                <img class="img-responsive" src=" {{ plant.featured_image.url }}" width="100%">
                 {% endif %}
             </div>
         </div>
@@ -27,7 +27,7 @@
 <!-- plant blog post content -->
 <div class="container">
     <div class="row">
-        <div class="col card mb-4  mt-3 left top">
+        <div class="col card mb-4">
             <div class="card-body">
                 <p class="card-text">
                     {{ plant.content | safe }}
@@ -44,12 +44,11 @@
                         <button type="submit" name="blogpost_id" value="{{plant.slug}}" class="btn-like no-border"><i
                                 class="fa-regular fa-heart"></i></button>
                         {% endif %}
-                        {% else %}
-                        <span class="btn-like no-border"><i class="fa-solid fa-heart"></i></span>
-                        {% endif %}
-                        {{ plant.number_of_likes }}
                     </form>
-
+                    {% else %}
+                    <span class="btn-like no-border"><i class="fa-solid fa-heart"></i></span>
+                    {% endif %}
+                    <span class="text-secondary">{{ plant.number_of_likes }} </span>
                     <!-- post comments count -->
                     {% with comments.count as total_comments %}
                     <span class="btn-like m-1"><i class="fa-solid fa-comment m-1"></i> {{ total_comments }}</span>
@@ -64,80 +63,78 @@
         </div>
     </div>
     <!-- comments section -->
-    <div class="comments-area">
-        <div class="container">
-            <div class="row">
-                <div class="card-container col-lg-8 mb-4 mt-3">
-                    <h3>Comments:</h3>
-                    <div>
-                        <!-- if there is at least one comment -->
-                        {% if comments %}
-                        <!-- for loop to iterate through comments -->
-                        {% for comment in comments %}
-                        <div class="comments">
-                            <!-- body of the comment -->
-                            <div>
-                                {{ comment.body | linebreaksbr }}
-                            </div>
-                            <div>
-                                <p class="post-icon mt-1"><i class="fa-solid fa-user pr-1"></i> {{ comment.name }}
-                                    on <span>{{ comment.created_on }}</span>
-                                </p>
-                            </div>
-                            <div>
-                                {% if comment.name == request.user.username %}
-                                <div class="col-sm mt-1">
-                                    <a class="btn btn-sm btn-edit"
-                                        href="{% url 'edit_comment' plant.slug comment.pk %}">Edit</a>
-                                    <a class="btn btn-sm btn-edit"
-                                        href="{% url 'delete_comment' plant.slug comment.pk %}">Delete</a>
-                                </div>
-                                {% endif %}
-                            </div>
+    <div class="container">
+        <div class="row">
+            <div class="card-container col-lg-8 mb-4 mt-3">
+                <h3>Comments:</h3>
+                <div>
+                    <!-- if there is at least one comment -->
+                    {% if comments %}
+                    <!-- for loop to iterate through comments -->
+                    {% for comment in comments %}
+                    <div class="comments">
+                        <!-- body of the comment -->
+                        <div>
+                            {{ comment.body | linebreaksbr }}
                         </div>
-                        <hr>
-                        <!-- end of loop -->
-                        {% endfor %}
-                        <!-- else, if there is no comment -->
-                        {% else %}
-                        <p>No comments yet, be the first to share your experience!</p>
-                        {% if not user.is_authenticated %}
-                        <p>To post a comment, <a class="link" href="{% url 'account_login' %}">log in</a> to our site!
-                            <br> If you do
-                            not have an account, please <a class="link" href="{% url 'account_signup' %}">register</a>
-                            here.</p>
-                        {% endif %}
-                        {% endif %}
+                        <div>
+                            <p class="post-icon mt-1"><i class="fa-solid fa-user pr-1"></i> {{ comment.name }}
+                                on <span>{{ comment.created_on }}</span>
+                            </p>
+                        </div>
+                        <div>
+                            {% if comment.name == request.user.username %}
+                            <div class="col-sm mt-1">
+                                <a class="btn btn-sm btn-edit"
+                                    href="{% url 'edit_comment' plant.slug comment.pk %}">Edit</a>
+                                <a class="btn btn-sm btn-edit"
+                                    href="{% url 'delete_comment' plant.slug comment.pk %}">Delete</a>
+                            </div>
+                            {% endif %}
+                        </div>
                     </div>
-                </div>
-                <div class="card-container col-lg-4 mb-4 mt-3 ">
-                    {% if user.is_authenticated %}
-                    <!-- alert if comment is posted, edited or deleted -->
-                    <div class="element-card" id="post-comment-card">
-                        {% if commented %}
-                        <div class="alert alert-success" role="alert">
-                            Your comment has been successfully posted
-                        </div>
-                        {% elif comment_edited %}
-                        <div class="alert alert-success" role="alert">
-                            Your comment has been successfully edited
-                        </div>
-                        {% elif comment_deleted %}
-                        <div class="alert alert-success" role="alert">
-                            Your comment has been successfully deleted
-                        </div>
-                        {% endif %}
-                        <!-- comment form -->
-                        <h3>Leave a comment:</h3>
-                        <p>Posting as: {{ user.username }}</p>
-                        <form method="post">
-                            {{ comment_form | crispy }}
-                            {% csrf_token %}
-                            <button type="submit" class="btn btn-signup btn-md mt-2">Submit</button>
-                        </form>
-                    </div>
+                    <hr>
+                    <!-- end of loop -->
+                    {% endfor %}
+                    <!-- else, if there is no comment -->
+                    {% else %}
+                    <p>No comments yet, be the first to share your experience!</p>
+                    {% if not user.is_authenticated %}
+                    <p>To post a comment, <a class="link" href="{% url 'account_login' %}">log in</a> to our site!
+                        <br> If you do
+                        not have an account, please <a class="link" href="{% url 'account_signup' %}">register</a>
+                        here.</p>
+                    {% endif %}
                     {% endif %}
                 </div>
+            </div>
+            <div class="card-container col-lg-4 mb-4 mt-3 ">
+                {% if user.is_authenticated %}
+                <!-- alert if comment is posted, edited or deleted -->
+                <div class="element-card" id="post-comment-card">
+                    {% if commented %}
+                    <div class="alert alert-success" role="alert">
+                        Your comment has been successfully posted
+                    </div>
+                    {% elif comment_edited %}
+                    <div class="alert alert-success" role="alert">
+                        Your comment has been successfully edited
+                    </div>
+                    {% elif comment_deleted %}
+                    <div class="alert alert-success" role="alert">
+                        Your comment has been successfully deleted
+                    </div>
+                    {% endif %}
+                    <!-- comment form -->
+                    <h3>Leave a comment:</h3>
+                    <p>Posting as: {{ user.username }}</p>
+                    <form method="post">
+                        {{ comment_form | crispy }}
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-signup btn-md mt-2">Submit</button>
+                    </form>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
