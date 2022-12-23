@@ -1,108 +1,164 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# STEM & LEAF - A PLANT CARE SPACE FOR BEGINNERS
 
-Welcome CaraMcAvinchey,
+## Author
+Cara McAvinchey 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Project Overview
+*  XX
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+You can view the deployed website [here](https://caramcavinchey.github.io/rock-paper-scissors/)
 
-## Gitpod Reminders
+<img width="997" alt="image" src="https://user-images.githubusercontent.com/97494262/167847460-3e1a4d5f-158f-4eeb-93d3-7f1a6ef52d9d.png">
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## UX
 
-A blue button should appear to click: _Make Public_,
+### Project Goal
+* XXX
 
-Another blue button should appear to click: _Open Browser_.
+### User Stories
+1. As a site user,
+    * XX
+    * XX
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+2. As a returning visitor,
+    * XX.   
+    * XX.  
+ 
+## DESIGN CHOICES
 
-A blue button should appear to click: _Make Public_,
+### Colors
+- The space background image inspired the color palette of the website and links to the theme of the game. 
+- The headings and body text are white to ensure clear contrast and readability for the user.
+- Background of the header and footer is a light purple to ensure clear contrast and delineation between sections.
+- All text and icon elements have a semi-transparent purple background to ensure the text has contrast from the background.
+- The icons are orange to add contrast from the purple palette.
 
-Another blue button should appear to click: _Open Browser_.
+### Typography
+- The logo and headings use ZCOOL QingKe HuangYou and body text uses Open Sans with a fall-back font of san-serif.
+- The choice of fonts were selected using [Google Fonts](https://fonts.google.com/).
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Images/Icons
+- The background image matches with the space theme of the game and creates a sense of depth without disrupting the foreground.
 
-To log into the Heroku toolbelt CLI:
+<img width="638" alt="image" src="https://user-images.githubusercontent.com/97494262/167847676-385240d9-1219-4b42-be4e-4d02afdad13d.png">
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- The rules image provides a clear diagram of the game moves and results.
+<img width="211" alt="image" src="https://user-images.githubusercontent.com/97494262/167854861-4d080e4c-46ec-422c-ac5a-6592395b9b3a.png">
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- The icons are used consistently across the site for game controls and in the rules.
+<img width="525" alt="image" src="https://user-images.githubusercontent.com/97494262/167848422-c5b60ace-fbaa-4f87-a273-8bc23dc0be71.png">
 
-------
+### Animations
+- The buttons across the site have a subtle grow effect when hovered over by the user.
+<img width="626" alt="image" src="https://user-images.githubusercontent.com/97494262/167848676-f217f2fc-d7de-4fea-be57-d050e396f125.png">
 
-## Release History
+### Responsiveness
+- The website was designed using flexbox instead of float or grid to avoid fixed heights and ensure responsiveness throughout the website.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## WIREFRAMES
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Mobile
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Desktop
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## FEATURES
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Welcome Area
+- XX
+- XX
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Game Score Area
+- XX
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Game Controls 
+- XX
+- XX
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Game Rules
+- XX
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### JavaScript Enable Message
+- XX
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Footer
+- XX
+- XX
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Error 404
+- XX
+- XX
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Features for Future Development
+- XX
+- XX
+- XX
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## TESTING
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Validation Testing
+- HTML
+   - No errors were returned when passing through the official [HTML validator]("https://validator.w3.org/nu/?doc=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F")
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- CSS
+   - No errors were found when passing through the [CSS validator]("https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en").
 
-------
+### Cross Browser and Cross Device Testing
+- The below combination of devices, browsers, and operating system were used to test the website. A range of viewport sizes were checked to see if users would have the same experience across multiple devices and browsers.
 
-## FAQ about the uptime script
+| **TOOL / Device**           | **BROWSER**      | **OS**  | **SCREEN WIDTH** |
+|-----------------------------|------------------|---------|------------------|
+| dev tools: Galaxy Fold      | Chrome           | android | 280 x 653 px     |
+| dev tools: iPhone SE        | safari           | iOs     | 375 x 667 px     |
+| dev tools: Pixel 2          | Chrome           | android | 411 x 731        |
+| real phone: iPhone XR       | safari           | iOs     | 414 x 896 px     |
+| browserstack: Nexus 7       | Firefox          | android | 960 x 600 px     |
+| browserstack: iPhone 13 Pro | safari           | iOs     | 390px × 844px    |
+| real tablet: iPad Pro 11    | Chrome           | iOs     | 834 x 1075 px    |
+| real laptop: Macbook Pro    | Firefox & Chrome | iOs     | 1400 x 766 px    |
+| broswerstack                | Firefox          | iOs     | 1440 x 672 px    |
+| browserstack                | Edge 99          | windows | 1440 x 672 px    |
 
-**Why have you added this script?**
+### Manual Testing
+- You can view manual testing of the website [here](https://docs.google.com/spreadsheets/d/1I9u6TR5_VShrvwokTrLhI9-OFdkqnsuMuvzmYk1Uw-k/edit?usp=sharing)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Outstanding Defects
+- XX
 
-**How will this affect me?**
+### Defects of Note
+- XX
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## ACCESSIBILITY
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Lighthouse Audit
+- XX
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Keyboard Navigation
+- XX
 
-**So….?**
+## DEPLOYMENT
+1. Click on the settings link in the menu:
+<img width="1438" alt="image" src="https://user-images.githubusercontent.com/97494262/167331789-267033ff-ba73-423b-aa89-bcf978388223.png">
+2. In the left hand menu, click on the pages link:
+<img width="1439" alt="image" src="https://user-images.githubusercontent.com/97494262/167331838-548c0b95-383b-4a2d-9604-4a547af52857.png">
+3. In the sources section of the GitHub pages, click on the dropdown menu to select main as the source:
+<img width="1437" alt="image" src="https://user-images.githubusercontent.com/97494262/167331906-0d7e8015-8aaa-4b15-92ad-06e6b3dfc860.png">
+4. After you've selected main, hit the save button:
+<img width="1436" alt="image" src="https://user-images.githubusercontent.com/97494262/167331939-b111f1c1-acde-4978-9015-cb00b57d6219.png">
+5. Eventually you'll see a blue area with the deployment URL and a success message:
+<img width="1437" alt="image" src="https://user-images.githubusercontent.com/97494262/167332270-04d5c320-e94f-4c14-b961-f72dbc4c5364.png">
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## CREDITS
+- XX
+- Code Institute Student Template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template).
 
-**Can I opt out?**
+### Media
+- XX
+- XX
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## ACKNOWLEDGEMENTS
+- Thank you to my mentor for continuous helpful feedback and support throughout the project.
+- The tutors at Code Institute for their patience and support.
+- The Code Institute Slack community for tips and guidance.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+[Back to the beginning](#table-of-contents)
