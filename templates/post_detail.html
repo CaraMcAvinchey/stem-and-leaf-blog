@@ -27,7 +27,7 @@
 <!-- plant blog post content -->
 <div class="container">
     <div class="row">
-        <div class="col card mb-4">
+        <div class="col card mb-2">
             <div class="card-body">
                 <p class="card-text">
                     {{ plant.content | safe }}
@@ -54,9 +54,13 @@
                     <span class="btn-like m-1"><i class="fa-solid fa-comment m-1"></i> {{ total_comments }}</span>
                     {% endwith %}
                 </div>
+                <a href="{% url 'home' %}">
+                    <button class="btn btn-signup mt-4">Go Back</button>
+                </a>
             </div>
         </div>
     </div>
+
     <div class="row">
         <div class="col">
             <hr>
