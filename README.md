@@ -6,10 +6,9 @@ Cara McAvinchey
 ## Project Overview
 *  XX
 
-You can view the deployed website [here](https://caramcavinchey.github.io/rock-paper-scissors/)
+You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.com/)
 
-<img width="997" alt="image" src="https://user-images.githubusercontent.com/97494262/167847460-3e1a4d5f-158f-4eeb-93d3-7f1a6ef52d9d.png">
-
+(amiresponsive image)
 
 ## UX
 
@@ -40,18 +39,11 @@ You can view the deployed website [here](https://caramcavinchey.github.io/rock-p
 
 ### Images/Icons
 - The background image matches with the space theme of the game and creates a sense of depth without disrupting the foreground.
-
-<img width="638" alt="image" src="https://user-images.githubusercontent.com/97494262/167847676-385240d9-1219-4b42-be4e-4d02afdad13d.png">
-
 - The rules image provides a clear diagram of the game moves and results.
-<img width="211" alt="image" src="https://user-images.githubusercontent.com/97494262/167854861-4d080e4c-46ec-422c-ac5a-6592395b9b3a.png">
-
 - The icons are used consistently across the site for game controls and in the rules.
-<img width="525" alt="image" src="https://user-images.githubusercontent.com/97494262/167848422-c5b60ace-fbaa-4f87-a273-8bc23dc0be71.png">
 
 ### Animations
 - The buttons across the site have a subtle grow effect when hovered over by the user.
-<img width="626" alt="image" src="https://user-images.githubusercontent.com/97494262/167848676-f217f2fc-d7de-4fea-be57-d050e396f125.png">
 
 ### Responsiveness
 - The website was designed using flexbox instead of float or grid to avoid fixed heights and ensure responsiveness throughout the website.
@@ -62,7 +54,7 @@ You can view the deployed website [here](https://caramcavinchey.github.io/rock-p
 
 ### Desktop
 
-## FEATURES
+## FEATURES/STRUCTURE
 
 ### Welcome Area
 - XX
@@ -94,6 +86,15 @@ You can view the deployed website [here](https://caramcavinchey.github.io/rock-p
 - XX
 - XX
 
+## DATA MODEL
+- XX
+(data tables)
+
+[x] C -
+[x] R -
+[x] U -
+[x] D -
+
 ## TESTING
 
 ### Validation Testing
@@ -120,7 +121,9 @@ You can view the deployed website [here](https://caramcavinchey.github.io/rock-p
 | browserstack                | Edge 99          | windows | 1440 x 672 px    |
 
 ### Manual Testing
-- You can view manual testing of the website [here](https://docs.google.com/spreadsheets/d/1I9u6TR5_VShrvwokTrLhI9-OFdkqnsuMuvzmYk1Uw-k/edit?usp=sharing)
+- You can view manual testing of the website [here](https://docs.google.com/spreadsheets/d/123Pia98Ms_Fe6at0hPnAWhcNrmeVc4X2RLYmD7VsqX4/edit?usp=sharing)
+
+### Automatic Testing
 
 ### Outstanding Defects
 - XX
@@ -134,6 +137,10 @@ You can view the deployed website [here](https://caramcavinchey.github.io/rock-p
 - XX
 
 ### Keyboard Navigation
+- XX
+
+## TECHNOLOGIES USED
+- XX
 - XX
 
 ## DEPLOYMENT
