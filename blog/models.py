@@ -8,7 +8,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 class Plant(models.Model):
     """
     Django model for the information stored
-    for each plant type. 
+    about each plant type.
     """
 
     title = models.CharField(max_length=200, unique=True)

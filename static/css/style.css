@@ -124,6 +124,11 @@ h6 {
     margin: 10px;
 }
 
+.totals {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2rem;
+}
+
 /* links and buttons */
 
 .btn-signup,
