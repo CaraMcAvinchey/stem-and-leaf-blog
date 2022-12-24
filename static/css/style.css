@@ -189,20 +189,19 @@ footer a {
 
 /* media queries */
 
-/* unfolded phones (mobile phones, 320px and bigger) */
-@media (min-width: 320px) {}
+/* unfolded phones (mobile phones, 320px and smaller) */
+@media (max-width: 320px) {
+    .logo p {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
 
-/* small devices (mobile phones, less than 576px) */
-
-@media (min-width: 576px) {}
-
-/* medium devices (tablets, less than 768px) */
-
-@media (min-width: 768px) {}
+    .navbar-toggler {
+        margin-top: 5px;
+    }
+}
 
 /* large devices (laptops, less than 992px) */
-
-@media (min-width: 992px) {}
 
 @media (min-width: 1024px) {
     .nav-link:hover {
@@ -216,7 +215,3 @@ footer a {
     }
 
 }
-
-/* extra large devices (desktops, less than 1200px) */
-
-@media (min-width: 1200px) {}
