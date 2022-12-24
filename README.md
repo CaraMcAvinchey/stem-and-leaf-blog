@@ -8,7 +8,7 @@ Cara McAvinchey
 
 You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.com/)
 
-(amiresponsive image)
+<img width="1028" alt="image" src="https://user-images.githubusercontent.com/97494262/209436822-8a40360c-cb65-4abf-bd98-5869aec18d12.png">
 
 ## UX
 
@@ -17,12 +17,24 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 
 ### User Stories
 1. As a site user,
-    * XX
-    * XX
+   * As a **site user**, I can **register an account** so that **I can interact with blog posts**.
+   * As a **site user**, I can **view a list of posts** so that **I can select one to read**.
+   * As a **site user**, I can **click on a post** so that **I can read the full article** and find out more about plant care**.**
+   * As a **site user**, I can **view the number of likes on each post** so that **I can see which plants are popular.**
+   * As a **site user**, I can **like a post** so that **I can engage with the blog content**.
+   * As a **site user**, I can **view comments on a post** so that **I can read other user feedback**.
+   * As a **site user**, I can **leave comments on a post** so that **I can share my own feedback.**
+   * As a **site user**, I can **edit and delete my comments on a post** so that **I can customise or remove my thoughts on a post** if required.
+   * As a **site user**, I can **use the search bar** so that **I can find plants I am looking for**.
+   * As a **site user**, I can **save my favourite plant posts** so that **I have all my houseplants I care for in the same place.**
+   * As a **site user**, I can **rate blog posts on a scale of 1-5** so that **I can give feedback about which content I enjoy most**.
+   * As a **site user**, I can **return to the home page** of the blog if there is an error so that **I don’t get lost on the website**.
 
-2. As a returning visitor,
-    * XX.   
-    * XX.  
+2. As a admin,
+    * In order to **create and control the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.**
+    * In order to **finish writing or publish content later** as an **admin user**, **I can create draft posts.**
+    * In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel.
+    * In order to **maintain a positive commnity atmosphere** as an **admin user**, **I can approve/disapprove comments.**  
  
 ## DESIGN CHOICES
 
