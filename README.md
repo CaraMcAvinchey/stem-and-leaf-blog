@@ -24,7 +24,7 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
    * As a **site user**, I can **like a post** so that **I can engage with the blog content**.
    * As a **site user**, I can **view comments on a post** so that **I can read other user feedback**.
    * As a **site user**, I can **leave comments on a post** so that **I can share my own feedback.**
-   * As a **site user**, I can **edit and delete my comments on a post** so that **I can customise or remove my thoughts on a post** if required.
+   * As a **site user**, I can **edit and delete my comments on a post** so that **I can customise or remove my thoughts** if required.
    * As a **site user**, I can **use the search bar** so that **I can find plants I am looking for**.
    * As a **site user**, I can **save my favourite plant posts** so that **I have all my houseplants I care for in the same place.**
    * As a **site user**, I can **rate blog posts on a scale of 1-5** so that **I can give feedback about which content I enjoy most**.
@@ -39,6 +39,8 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 ## DESIGN CHOICES
 
 ### Colors
+<img width="538" alt="image" src="https://user-images.githubusercontent.com/97494262/209437405-63db90ed-fd86-4285-8a19-002c73a2d1a7.png">
+
 - The space background image inspired the color palette of the website and links to the theme of the game. 
 - The headings and body text are white to ensure clear contrast and readability for the user.
 - Background of the header and footer is a light purple to ensure clear contrast and delineation between sections.
@@ -46,10 +48,15 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 - The icons are orange to add contrast from the purple palette.
 
 ### Typography
+<img width="896" alt="image" src="https://user-images.githubusercontent.com/97494262/209437426-7c754f60-85b0-4d60-9f17-04caedb8f635.png">
+
+- The font combination was chosen using guidance from Mai Knoblovits [here](https://artisanthemes.io/great-google-font-combinations-ready-use/)
 - The logo and headings use ZCOOL QingKe HuangYou and body text uses Open Sans with a fall-back font of san-serif.
 - The choice of fonts were selected using [Google Fonts](https://fonts.google.com/).
 
 ### Images/Icons
+<img width="351" alt="image" src="https://user-images.githubusercontent.com/97494262/209437645-30a1ff77-27cb-4eea-a342-6aa1592cb81d.png">
+
 - The background image matches with the space theme of the game and creates a sense of depth without disrupting the foreground.
 - The rules image provides a clear diagram of the game moves and results.
 - The icons are used consistently across the site for game controls and in the rules.
@@ -62,9 +69,11 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 
 ## WIREFRAMES
 
-### Mobile
+### Post List
+<img width="636" alt="image" src="https://user-images.githubusercontent.com/97494262/209437372-83b2bc1e-68a0-4a75-8e86-d78b69df4a7d.png">
 
-### Desktop
+### Post Detail
+<img width="611" alt="image" src="https://user-images.githubusercontent.com/97494262/209437385-b8be9fe9-bbbb-4110-a9af-e0f5239f3cc9.png">
 
 ## FEATURES/STRUCTURE
 
