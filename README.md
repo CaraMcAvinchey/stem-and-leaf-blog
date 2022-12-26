@@ -16,32 +16,32 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 * The aim of the project is to provide easily digestible information about popular house plants for beginners and to allow for conversation and sharing of experiences in taking care of them.
 
 ### User Stories
-1. As a site user,
-   * As a **site user**, I can **register an account** so that **I can interact with blog posts**.
-   * As a **site user**, I can **view a list of posts** so that **I can select one to read**.
-   * As a **site user**, I can **click on a post** so that **I can read the full article** and find out more about plant care**.**
-   * As a **site user**, I can **view the number of likes on each post** so that **I can see which plants are popular.**
-   * As a **site user**, I can **like a post** so that **I can engage with the blog content**.
-   * As a **site user**, I can **view comments on a post** so that **I can read other user feedback**.
-   * As a **site user**, I can **leave comments on a post** so that **I can share my own feedback.**
-   * As a **site user**, I can **edit and delete my comments on a post** so that **I can customise or remove my thoughts** if required.
-   * As a **site user**, I can **use the search bar** so that **I can find plants I am looking for**.
-   * As a **site user**, I can **save my favourite plant posts** so that **I have all my houseplants I care for in the same place.**
-   * As a **site user**, I can **rate blog posts on a scale of 1-5** so that **I can give feedback about which content I enjoy most**.
-   * As a **site user**, I can **return to the home page** of the blog if there is an error so that **I don’t get lost on the website**.
+* For sight users:
+   1. As a **site user**, I can **register an account** so that **I can interact with blog posts**.
+   2. As a **site user**, I can **view a list of posts** so that **I can select one to read**.
+   3. As a **site user**, I can **click on a post** so that **I can read the full article** and find out more about plant care**.**
+   4. As a **site user**, I can **view the number of likes on each post** so that **I can see which plants are popular.**
+   5. As a **site user**, I can **like a post** so that **I can engage with the blog content**.
+   6. As a **site user**, I can **view comments on a post** so that **I can read other user feedback**.
+   7. As a **site user**, I can **leave comments on a post** so that **I can share my own feedback.**
+   8. As a **site user**, I can **edit and delete my comments on a post** so that **I can customise or remove my thoughts** if required.
+   9. As a **site user**, I can **use the search bar** so that **I can find plants I am looking for**.
+   10. As a **site user**, I can **save my favourite plant posts** so that **I have all my houseplants I care for in the same place.**
+   11. As a **site user**, I can **rate blog posts on a scale of 1-5** so that **I can give feedback about which content I enjoy most**.
+   12. As a **site user**, I can **return to the home page** of the blog if there is an error so that **I don’t get lost on the website**.
 
-2. As a admin,
-    * In order to **create and control the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.**
-    * In order to **finish writing or publish content later** as an **admin user**, **I can create draft posts.**
-    * In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel.
-    * In order to **maintain a positive commnity atmosphere** as an **admin user**, **I can approve/disapprove comments.**  
+* For admin users:
+    13. In order to **create and control the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.**
+    14. In order to **finish writing or publish content later** as an **admin user**, **I can create draft posts.**
+    15. In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel.
+    16. In order to **maintain a positive commnity atmosphere** as an **admin user**, **I can approve/disapprove comments.**  
  
 ## DESIGN CHOICES
 
 ### Colors
 <img width="538" alt="image" src="https://user-images.githubusercontent.com/97494262/209437405-63db90ed-fd86-4285-8a19-002c73a2d1a7.png">
  
-- The natural color palette links to the theme of plants and plantcare. 
+- The natural color palette links to the theme of plants and plant care. 
 - The headings, icons and body text are darker to ensure clear contrast and readability for the user across the site.
 - The green header and footer ensures clear contrast and delineation between sections.
 
@@ -63,14 +63,15 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 - All links have a color change and underlined effect when hovered for clear distinction from the body text.
 
 ### Responsiveness
-- The website was designed mobile-first using flexbox instead of float or grid to avoid fixed heights and ensure responsiveness throughout the website.
+- The website was designed mobile-first using flexbox to ensure responsiveness throughout the website.
 - The standard grid from Bootstrap was used to achieve this.
 
 ## WIREFRAMES
 
 ### Post List
 <img width="636" alt="image" src="https://user-images.githubusercontent.com/97494262/209437372-83b2bc1e-68a0-4a75-8e86-d78b69df4a7d.png">
-- The post list page was designed using cards to show a quick summary of each plant so the user can click and find out more about a plant that interests them if needed.
+- The post list page was designed using cards to show a quick summary of each plant.
+- The user can click and find out more about a plant that interests them.
 
 ### Post Detail
 <img width="611" alt="image" src="https://user-images.githubusercontent.com/97494262/209437385-b8be9fe9-bbbb-4110-a9af-e0f5239f3cc9.png">
@@ -179,12 +180,15 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 <img width="1437" alt="image" src="https://user-images.githubusercontent.com/97494262/167332270-04d5c320-e94f-4c14-b961-f72dbc4c5364.png">
 
 ## CREDITS
-- XX
+- The Stockbook Project by Massimo Ranalli assisted with the setup of the edit/delete functions for comments.
 - Code Institute Student Template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template).
 
 ### Media
-- XX
-- XX
+- The fonts were chosen with guidance from an article written by Mai Knoblovits [here](https://artisanthemes.io/great-google-font-combinations-ready-use/)
+- The colors for the website was generated using [Color Space]([https://coolors.co/image-picker](https://mycolor.space/?hex=%2333C883&sub=1)).
+- The plant images were sourced using [Pexels](https://www.pexels.com) and [Pixabay](https://pixabay.com/).
+- The icons for the favicon, footer, about page and location headings were taken from [Font Awesome](https://fontawesome.com/).
+- The favicon image was converted using [Favicon.io](https://favicon.io/).
 
 ## ACKNOWLEDGEMENTS
 - Thank you to my mentor for continuous helpful feedback and support throughout the project.
