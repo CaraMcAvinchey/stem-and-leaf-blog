@@ -131,8 +131,13 @@ class CommentEdit(UpdateView):
         return reverse("post_detail", kwargs={"slug": self.object.post.slug})
 
 
+class Page403(TemplateView):
+    template_name = '403.html'
+
+
 class Page404(TemplateView):
-    """
-    For the 404 page url
-    """
     template_name = '404.html'
+
+
+class Page500(TemplateView):
+    template_name = '500.html'
