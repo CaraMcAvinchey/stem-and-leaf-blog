@@ -25,6 +25,7 @@ h6 {
 .logo p {
     margin-bottom: 0;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .nav-item a {
@@ -180,6 +181,11 @@ h6 {
 
 footer a {
     font-size: 1.4rem;
+}
+
+footer p {
+    color: #F8FBEB;
+    font-weight: bold;
 }
 
 .socials:hover {
