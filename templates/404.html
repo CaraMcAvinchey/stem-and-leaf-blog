@@ -5,12 +5,12 @@
 <!-- 404 error banner -->
 <div class="container">
     <div class="card-container">
-        <div class="element-card">
-            <div class="col-12 fw-bold fs-5 text-center">
-                Oops! Looks like the page you're looking for doesn't exist.<br><br>
-
-                <a href="{% url 'home' %}">Go back home</a>
-            </div>
+        <div class="col-12 mt-2 text-center">
+            <h2>Oops! Looks like the page you're looking for doesn't exist.</h2>
+            <br>
+            <a href="{% url 'home' %}">
+                <button class="btn btn-signup btn-md mt-2">Go back home</button>
+            </a>
         </div>
     </div>
 </div>
