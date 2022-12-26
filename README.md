@@ -69,14 +69,14 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 ## WIREFRAMES
 
 ### Post List
-<img width="636" alt="image" src="https://user-images.githubusercontent.com/97494262/209437372-83b2bc1e-68a0-4a75-8e86-d78b69df4a7d.png">
 - The post list page was designed using cards to show a quick summary of each plant.
 - The user can click and find out more about a plant that interests them.
+<img width="636" alt="image" src="https://user-images.githubusercontent.com/97494262/209437372-83b2bc1e-68a0-4a75-8e86-d78b69df4a7d.png">
 
 ### Post Detail
-<img width="611" alt="image" src="https://user-images.githubusercontent.com/97494262/209437385-b8be9fe9-bbbb-4110-a9af-e0f5239f3cc9.png">
 - Each blog post provides detail about the plant and a list of instructions to care for it. 
 - The registered user can also comment and like the post if desired.
+<img width="611" alt="image" src="https://user-images.githubusercontent.com/97494262/209437385-b8be9fe9-bbbb-4110-a9af-e0f5239f3cc9.png">
 
 ## FEATURES/STRUCTURE
 
@@ -123,7 +123,7 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 
 ### Validation Testing
 - HTML
-   - No errors were returned when passing through the official [HTML validator]("https://validator.w3.org/nu/?doc=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F")
+   - No errors were returned when passing through the official [HTML validator]("https://validator.w3.org/nu/?doc=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F").
 
 - CSS
    - No errors were found when passing through the [CSS validator]("https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en").
@@ -145,7 +145,7 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 | browserstack                | Edge 99          | windows | 1440 x 672 px    |
 
 ### Manual Testing
-- You can view manual testing of the website [here](https://docs.google.com/spreadsheets/d/123Pia98Ms_Fe6at0hPnAWhcNrmeVc4X2RLYmD7VsqX4/edit?usp=sharing)
+- You can view manual testing of the website [here](https://docs.google.com/spreadsheets/d/123Pia98Ms_Fe6at0hPnAWhcNrmeVc4X2RLYmD7VsqX4/edit?usp=sharing).
 
 ### Automatic Testing
 
@@ -164,27 +164,54 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 - XX
 
 ## TECHNOLOGIES USED
-- XX
-- XX
+- Gitpod
+- Github
+- Django
+- Bootstrap
+- Cloudinary
+- Summernote
+- Crispy Forms
+- Heroku
+- Balsamiq
+- Fontawesome
 
 ## DEPLOYMENT
-1. Click on the settings link in the menu:
-<img width="1438" alt="image" src="https://user-images.githubusercontent.com/97494262/167331789-267033ff-ba73-423b-aa89-bcf978388223.png">
-2. In the left hand menu, click on the pages link:
-<img width="1439" alt="image" src="https://user-images.githubusercontent.com/97494262/167331838-548c0b95-383b-4a2d-9604-4a547af52857.png">
-3. In the sources section of the GitHub pages, click on the dropdown menu to select main as the source:
-<img width="1437" alt="image" src="https://user-images.githubusercontent.com/97494262/167331906-0d7e8015-8aaa-4b15-92ad-06e6b3dfc860.png">
-4. After you've selected main, hit the save button:
-<img width="1436" alt="image" src="https://user-images.githubusercontent.com/97494262/167331939-b111f1c1-acde-4978-9015-cb00b57d6219.png">
-5. Eventually you'll see a blue area with the deployment URL and a success message:
-<img width="1437" alt="image" src="https://user-images.githubusercontent.com/97494262/167332270-04d5c320-e94f-4c14-b961-f72dbc4c5364.png">
+* Step 1: Create a new app in Heroku, choose a unique name and region.
+* Step 2: Login to ElephantSQL, access the dashboard and create a new instance (input a name, select a region).
+* Step 3: Return to dashboard, copy the database URL:
+<img width="1074" alt="image" src="https://user-images.githubusercontent.com/97494262/209531384-85d95cc3-a381-4c3c-b56f-215238e0daf8.png">
+* Step 4: Create env.py file (ensure it is included in .gitignore file) and add environment the below variables. Paste the URL from above:
+<img width="372" alt="image" src="https://user-images.githubusercontent.com/97494262/209531222-599282ee-2c54-490f-b543-1f09e5255490.png">
+* Step 5: Include a secret key in the variables:
+<img width="953" alt="Screenshot 2022-12-26 at 11 25 13" src="https://user-images.githubusercontent.com/97494262/209531979-9ba177cc-3e44-48a7-80dc-884d06932f54.png">
+* Step 6: Include the below code to settings.py file:
+<img width="301" alt="image" src="https://user-images.githubusercontent.com/97494262/209532128-acaa1e29-edea-45c3-93ce-2caaf0f71862.png">
+* Step 7: Link the database in settings.py and migrate then push to GitHub:
+<img width="303" alt="image" src="https://user-images.githubusercontent.com/97494262/209532393-5283592f-5caf-4e81-b3fd-9d20bd62b111.png">
+* Step 8: In Heroku, add three config vars:
+<img width="243" alt="image" src="https://user-images.githubusercontent.com/97494262/209532605-04bff00b-951f-4084-9ad5-6eff111ac6bf.png">
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/97494262/209532533-e9b3d879-a40a-4335-a56b-3c0e5c370a8a.png">
+* Step 9: Login to Cloudinary, copy the API Environmental variable to dashboard and add to env.py (see screenshot above) & to Heroku config vars:
+<img width="571" alt="image" src="https://user-images.githubusercontent.com/97494262/209533286-4a79143c-6568-4055-99fc-76dd5821a02b.png">
+* Step 10: Add cloudinary to installed apps in settings.py, add static/media file settings:
+<img width="407" alt="image" src="https://user-images.githubusercontent.com/97494262/209533445-8f6670c5-490b-4294-95cf-febaaaed2ab2.png">
+<img width="853" alt="image" src="https://user-images.githubusercontent.com/97494262/209533629-ab3fb31b-f096-4305-996e-970e4c950a3f.png">
+* Step 11: Add template directories in settings.py, add Heroku host name to allowed hosts and add directory files:
+<img width="746" alt="image" src="https://user-images.githubusercontent.com/97494262/209533879-b8284837-e7a1-4315-83e6-9b88d2125882.png">
+<img width="501" alt="image" src="https://user-images.githubusercontent.com/97494262/209534100-46723f98-7bd6-40ed-91c1-5226ad6e950d.png">
+<img width="313" alt="image" src="https://user-images.githubusercontent.com/97494262/209534271-772afed4-f299-45dc-b72d-d0843b7ad189.png">
+* Step 12: Create a Procfile, then commit and push to GitHub:
+<img width="504" alt="image" src="https://user-images.githubusercontent.com/97494262/209534389-5b0cdd3c-54f7-44e8-8a21-99068431365a.png">
+* Step 13: Connect GitHub account in Heroku, connect and deploy branch. Open app and check:
+<img width="421" alt="image" src="https://user-images.githubusercontent.com/97494262/209534580-c03fa4fd-8e52-487b-8ecc-23563fd30327.png">
 
 ## CREDITS
+- The Code Institute 'I Think, Therefore I Blog' walkthrough project assisted and guided in the setup and basic structure of this project.
 - The Stockbook Project by Massimo Ranalli assisted with the setup of the edit/delete functions for comments.
 - Code Institute Student Template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template).
 
 ### Media
-- The fonts were chosen with guidance from an article written by Mai Knoblovits [here](https://artisanthemes.io/great-google-font-combinations-ready-use/)
+- The fonts were chosen with guidance from an article written by Mai Knoblovits [here](https://artisanthemes.io/great-google-font-combinations-ready-use/).
 - The colors for the website was generated using [Color Space]([https://coolors.co/image-picker](https://mycolor.space/?hex=%2333C883&sub=1)).
 - The plant images were sourced using [Pexels](https://www.pexels.com) and [Pixabay](https://pixabay.com/).
 - The icons for the favicon, footer, about page and location headings were taken from [Font Awesome](https://fontawesome.com/).
