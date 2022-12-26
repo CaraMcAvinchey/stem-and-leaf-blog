@@ -15,9 +15,9 @@
                             <div class="image-container">
                                 <a href="{% url 'post_detail' plant.slug  %}">
                                 {% if "placeholder" in plant.featured_image.url %}
-                                <img class="card-img-top" src="../static/images/leaf-placeholder-square.jpg">
+                                <img class="card-img-top" alt="A plant in a ceramic pot placed on a table." src="../static/images/leaf-placeholder-square.jpg">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ plant.featured_image.url }}">
+                                <img class="card-img-top" alt="A picture of the featured plant of the blog post." src=" {{ plant.featured_image.url }}">
                                 {% endif %}
                                 </a>
                                 <div class="image-flash">
