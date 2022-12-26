@@ -111,13 +111,17 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 - XX
 
 ## DATA MODEL
-- XX
-(data tables)
+<img width="484" alt="image" src="https://user-images.githubusercontent.com/97494262/209538748-6f3cdc41-16c5-43ab-94a8-2341239ffc78.png">
+[x] C - Admin users can create blog posts, site users can create/register their own profile to interact with the posts.
+[x] R - Site users can open and read the plant blog posts and read comments from other users.
+[x] U - Admin users can update blog posts content and plant care criteria (plant level, plant thirst, plant light).
+[x] D - Admin users can delete blog posts and approve/disaprove comments.
 
-[x] C -
-[x] R -
-[x] U -
-[x] D -
+<img width="477" alt="image" src="https://user-images.githubusercontent.com/97494262/209538824-f613791d-53b6-43e4-a305-f14a52026443.png">
+[x] C - Site users can create their own comments on each blog post.
+[x] R - Site users can read comments from other users.
+[x] U - Site users are able to update/edit their comments.
+[x] D - Site users are able to delete their comments.
 
 ## TESTING
 
@@ -164,8 +168,8 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 - XX
 
 ## TECHNOLOGIES USED
-- Gitpod
-- Github
+- GitPod
+- GitHub
 - Django
 - Bootstrap
 - Cloudinary
@@ -176,33 +180,33 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 - Fontawesome
 
 ## DEPLOYMENT
-* Step 1: Create a new app in Heroku, choose a unique name and region.
-* Step 2: Login to ElephantSQL, access the dashboard and create a new instance (input a name, select a region).
-* Step 3: Return to dashboard, copy the database URL:
+**Step 1:** Create a new app in Heroku, choose a unique name and region.
+**Step 2:** Login to ElephantSQL, access the dashboard and create a new instance (input a name, select a region).
+**Step 3:** Return to dashboard, copy the database URL:
 <img width="1074" alt="image" src="https://user-images.githubusercontent.com/97494262/209531384-85d95cc3-a381-4c3c-b56f-215238e0daf8.png">
-* Step 4: Create env.py file (ensure it is included in .gitignore file) and add environment the below variables. Paste the URL from above:
+**Step 4:** Create env.py file (ensure it is included in .gitignore file) and add environment the below variables. Paste the URL from above:
 <img width="372" alt="image" src="https://user-images.githubusercontent.com/97494262/209531222-599282ee-2c54-490f-b543-1f09e5255490.png">
-* Step 5: Include a secret key in the variables:
+**Step 5:** Include a secret key in the variables:
 <img width="953" alt="Screenshot 2022-12-26 at 11 25 13" src="https://user-images.githubusercontent.com/97494262/209531979-9ba177cc-3e44-48a7-80dc-884d06932f54.png">
-* Step 6: Include the below code to settings.py file:
+**Step 6:** Include the below code to settings.py file:
 <img width="301" alt="image" src="https://user-images.githubusercontent.com/97494262/209532128-acaa1e29-edea-45c3-93ce-2caaf0f71862.png">
-* Step 7: Link the database in settings.py and migrate then push to GitHub:
+**Step 7:** Link the database in settings.py and migrate then push to GitHub:
 <img width="303" alt="image" src="https://user-images.githubusercontent.com/97494262/209532393-5283592f-5caf-4e81-b3fd-9d20bd62b111.png">
-* Step 8: In Heroku, add three config vars:
+**Step 8:** In Heroku, add three config vars:
 <img width="243" alt="image" src="https://user-images.githubusercontent.com/97494262/209532605-04bff00b-951f-4084-9ad5-6eff111ac6bf.png">
 <img width="350" alt="image" src="https://user-images.githubusercontent.com/97494262/209532533-e9b3d879-a40a-4335-a56b-3c0e5c370a8a.png">
-* Step 9: Login to Cloudinary, copy the API Environmental variable to dashboard and add to env.py (see screenshot above) & to Heroku config vars:
+**Step 9:** Login to Cloudinary, copy the API Environmental variable to dashboard and add to env.py (see screenshot above) & to Heroku config vars:
 <img width="571" alt="image" src="https://user-images.githubusercontent.com/97494262/209533286-4a79143c-6568-4055-99fc-76dd5821a02b.png">
-* Step 10: Add cloudinary to installed apps in settings.py, add static/media file settings:
+**Step 10:** Add cloudinary to installed apps in settings.py, add static/media file settings:
 <img width="407" alt="image" src="https://user-images.githubusercontent.com/97494262/209533445-8f6670c5-490b-4294-95cf-febaaaed2ab2.png">
 <img width="853" alt="image" src="https://user-images.githubusercontent.com/97494262/209533629-ab3fb31b-f096-4305-996e-970e4c950a3f.png">
-* Step 11: Add template directories in settings.py, add Heroku host name to allowed hosts and add directory files:
+**Step 11:** Add template directories in settings.py, add Heroku host name to allowed hosts and add directory files:
 <img width="746" alt="image" src="https://user-images.githubusercontent.com/97494262/209533879-b8284837-e7a1-4315-83e6-9b88d2125882.png">
 <img width="501" alt="image" src="https://user-images.githubusercontent.com/97494262/209534100-46723f98-7bd6-40ed-91c1-5226ad6e950d.png">
 <img width="313" alt="image" src="https://user-images.githubusercontent.com/97494262/209534271-772afed4-f299-45dc-b72d-d0843b7ad189.png">
-* Step 12: Create a Procfile, then commit and push to GitHub:
+**Step 12:** Create a Procfile, then commit and push to GitHub:
 <img width="504" alt="image" src="https://user-images.githubusercontent.com/97494262/209534389-5b0cdd3c-54f7-44e8-8a21-99068431365a.png">
-* Step 13: Connect GitHub account in Heroku, connect and deploy branch. Open app and check:
+**Step 13:** Connect GitHub account in Heroku, connect and deploy branch. Open app and check:
 <img width="421" alt="image" src="https://user-images.githubusercontent.com/97494262/209534580-c03fa4fd-8e52-487b-8ecc-23563fd30327.png">
 
 ## CREDITS
