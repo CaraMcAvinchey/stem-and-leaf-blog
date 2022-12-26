@@ -10,4 +10,6 @@ urlpatterns = [
          views.CommentDelete.as_view(), name="delete_comment"),
     path('<slug:slug>/<int:pk>/edit_comment/',
          views.CommentEdit.as_view(), name="edit_comment"),
+    
+    path('404', views.Page404.as_view(), name='404'),
 ]

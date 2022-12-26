@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.views.generic import DeleteView, UpdateView
+from django.views.generic.base import TemplateView
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
 from .models import Plant, Comment
@@ -128,3 +129,10 @@ class CommentEdit(UpdateView):
         """
         PlantDetail.comment_edited = True
         return reverse("post_detail", kwargs={"slug": self.object.post.slug})
+
+
+class Page404(TemplateView):
+    """
+    For the 404 page url
+    """
+    template_name = '404.html'
