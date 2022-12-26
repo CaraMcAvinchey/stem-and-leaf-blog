@@ -4,7 +4,7 @@
 Cara McAvinchey 
 
 ## Project Overview
-*  XX
+*  The Stem & Leaf blog is a place for plant care beginners to visit and learn about how to take care of their plants. Each blog post is dedicated to a popular house plant, with a short write up and tips on how to maintain it. 
 
 You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.com/)
 
@@ -13,7 +13,7 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 ## UX
 
 ### Project Goal
-* XXX
+* The aim of the project is to provide easily digestible information about popular house plants for beginners and to allow for conversation and sharing of experiences in taking care of them.
 
 ### User Stories
 1. As a site user,
@@ -40,40 +40,42 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 
 ### Colors
 <img width="538" alt="image" src="https://user-images.githubusercontent.com/97494262/209437405-63db90ed-fd86-4285-8a19-002c73a2d1a7.png">
-
-- The space background image inspired the color palette of the website and links to the theme of the game. 
-- The headings and body text are white to ensure clear contrast and readability for the user.
-- Background of the header and footer is a light purple to ensure clear contrast and delineation between sections.
-- All text and icon elements have a semi-transparent purple background to ensure the text has contrast from the background.
-- The icons are orange to add contrast from the purple palette.
+ 
+- The natural color palette links to the theme of plants and plantcare. 
+- The headings, icons and body text are darker to ensure clear contrast and readability for the user across the site.
+- The green header and footer ensures clear contrast and delineation between sections.
 
 ### Typography
 <img width="896" alt="image" src="https://user-images.githubusercontent.com/97494262/209437426-7c754f60-85b0-4d60-9f17-04caedb8f635.png">
 
 - The font combination was chosen using guidance from Mai Knoblovits [here](https://artisanthemes.io/great-google-font-combinations-ready-use/)
-- The logo and headings use ZCOOL QingKe HuangYou and body text uses Open Sans with a fall-back font of san-serif.
-- The choice of fonts were selected using [Google Fonts](https://fonts.google.com/).
+- The logo and headings use Amatic SC with a fallback of cursive and the body text uses Roboto Condensed with a fallback of san-serif.
+- The choice of fonts were selected and installed using [Google Fonts](https://fonts.google.com/).
 
 ### Images/Icons
 <img width="351" alt="image" src="https://user-images.githubusercontent.com/97494262/209437645-30a1ff77-27cb-4eea-a342-6aa1592cb81d.png">
 
-- The background image matches with the space theme of the game and creates a sense of depth without disrupting the foreground.
-- The rules image provides a clear diagram of the game moves and results.
-- The icons are used consistently across the site for game controls and in the rules.
+- The icons were chosen to provide clear understanding of each plant and its care requirements.
+- Each summary card has the same information structure with all icons standard throughout the site.
 
 ### Animations
-- The buttons across the site have a subtle grow effect when hovered over by the user.
+- The navbar, social icons and buttons across the site have a subtle grow effect when hovered over by the user.
+- All links have a color change and underlined effect when hovered for clear distinction from the body text.
 
 ### Responsiveness
-- The website was designed using flexbox instead of float or grid to avoid fixed heights and ensure responsiveness throughout the website.
+- The website was designed mobile-first using flexbox instead of float or grid to avoid fixed heights and ensure responsiveness throughout the website.
+- The standard grid from Bootstrap was used to achieve this.
 
 ## WIREFRAMES
 
 ### Post List
 <img width="636" alt="image" src="https://user-images.githubusercontent.com/97494262/209437372-83b2bc1e-68a0-4a75-8e86-d78b69df4a7d.png">
+- The post list page was designed using cards to show a quick summary of each plant so the user can click and find out more about a plant that interests them if needed.
 
 ### Post Detail
 <img width="611" alt="image" src="https://user-images.githubusercontent.com/97494262/209437385-b8be9fe9-bbbb-4110-a9af-e0f5239f3cc9.png">
+- Each blog post provides detail about the plant and a list of instructions to care for it. 
+- The registered user can also comment and like the post if desired.
 
 ## FEATURES/STRUCTURE
 
