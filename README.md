@@ -4,7 +4,7 @@
 Cara McAvinchey 
 
 ## Project Overview
-*  The Stem & Leaf blog is a place for plant care beginners to visit and learn about how to take care of their plants. Each blog post is dedicated to a popular house plant, with a short write up and tips on how to maintain it. 
+*  The Stem & Leaf blog is a place for plant care beginners to visit and learn about how to take care of their plants. Each blog post is dedicated to a popular house plant, with a short write up and care tips. 
 
 You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.com/)
 
@@ -19,7 +19,7 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 * For sight users:
    1. As a **site user**, I can **register an account** so that **I can interact with blog posts**.
    2. As a **site user**, I can **view a list of posts** so that **I can select one to read**.
-   3. As a **site user**, I can **click on a post** so that **I can read the full article** and find out more about plant care**.**
+   3. As a **site user**, I can **click on a post** so that **I can read the full article** and find out more about plant care.
    4. As a **site user**, I can **view the number of likes on each post** so that **I can see which plants are popular.**
    5. As a **site user**, I can **like a post** so that **I can engage with the blog content**.
    6. As a **site user**, I can **view comments on a post** so that **I can read other user feedback**.
@@ -164,7 +164,7 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 ## ACCESSIBILITY
 
 ### Lighthouse Audit
-- XX
+- 
 
 ### Keyboard Navigation
 - XX
