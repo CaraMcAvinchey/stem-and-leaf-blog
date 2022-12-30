@@ -16,24 +16,24 @@ Cara McAvinchey
 
 ### User Stories
 * For sight users:
-   1. As a **site user**, I can **register an account** so that **I can interact with blog posts**.
-   2. As a **site user**, I can **view a list of posts** so that **I can select one to read**.
-   3. As a **site user**, I can **click on a post** so that **I can read the full article** and find out more about plant care.
-   4. As a **site user**, I can **view the number of likes on each post** so that **I can see which plants are popular.**
-   5. As a **site user**, I can **like a post** so that **I can engage with the blog content**.
-   6. As a **site user**, I can **view comments on a post** so that **I can read other user feedback**.
-   7. As a **site user**, I can **leave comments on a post** so that **I can share my own feedback.**
-   8. As a **site user**, I can **edit and delete my comments on a post** so that **I can customise or remove my thoughts** if required.
-   9. As a **site user**, I can **use the search bar** so that **I can find plants I am looking for**.
-   10. As a **site user**, I can **save my favourite plant posts** so that **I have all my houseplants I care for in the same place.**
-   11. As a **site user**, I can **rate blog posts on a scale of 1-5** so that **I can give feedback about which content I enjoy most**.
-   12. As a **site user**, I can **return to the home page** of the blog if there is an error so that **I don’t get lost on the website**.
+1. As a **site user**, I can **register an account** so that **I can interact with blog posts**.
+2. As a **site user**, I can **view a list of posts** so that **I can select one to read**.
+3. As a **site user**, I can **click on a post** so that **I can read the full article** and find out more about plant care.
+4. 4. As a **site user**, I can **view the number of likes on each post** so that **I can see which plants are popular.**
+5. As a **site user**, I can **like a post** so that **I can engage with the blog content**.
+6. As a **site user**, I can **view comments on a post** so that **I can read other user feedback**.
+7. As a **site user**, I can **leave comments on a post** so that **I can share my own feedback.**
+8. As a **site user**, I can **edit and delete my comments on a post** so that **I can customise or remove my thoughts** if required.
+9. As a **site user**, I can **use the search bar** so that **I can find plants I am looking for**.
+10. As a **site user**, I can **save my favourite plant posts** so that **I have all my houseplants I care for in the same place.**
+11. As a **site user**, I can **rate blog posts on a scale of 1-5** so that **I can give feedback about which content I enjoy most**.
+12. As a **site user**, I can **return to the home page** of the blog if there is an error so that **I don’t get lost on the website**.
 
 * For admin users:
-    1. In order to **create and control the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.**
-    2. In order to **finish writing or publish content later** as an **admin user**, **I can create draft posts.**
-    3. In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel.
-    4. In order to **maintain a positive commnity atmosphere** as an **admin user**, **I can approve/disapprove comments.**  
+1. In order to **create and control the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.**
+2. In order to **finish writing or publish content later** as an **admin user**, **I can create draft posts.**
+3. In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel.
+4. In order to **maintain a positive commnity atmosphere** as an **admin user**, **I can approve/disapprove comments.**  
  
 ## DESIGN CHOICES
 
@@ -50,7 +50,7 @@ Cara McAvinchey
 ### Typography
 <img width="896" alt="image" src="https://user-images.githubusercontent.com/97494262/209437426-7c754f60-85b0-4d60-9f17-04caedb8f635.png">
 
-- The font combination was chosen using guidance from Mai Knoblovits [here](https://artisanthemes.io/great-google-font-combinations-ready-use/)
+- The font combination was chosen using guidance article from Mai Knoblovits [here](https://artisanthemes.io/great-google-font-combinations-ready-use/).
 - The logo and headings use Amatic SC with a fallback of cursive and the body text uses Roboto Condensed with a fallback of san-serif.
 - The choice of fonts were selected and installed using [Google Fonts](https://fonts.google.com/).
 
