@@ -5,8 +5,7 @@ Cara McAvinchey
 
 ## Project Overview
 *  The Stem & Leaf blog is a place for plant care beginners to visit and learn about how to take care of their plants. Each blog post is dedicated to a popular house plant, with a short write up and care tips. 
-
-You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.com/)
+* You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.com/)
 
 <img width="1028" alt="image" src="https://user-images.githubusercontent.com/97494262/209436822-8a40360c-cb65-4abf-bd98-5869aec18d12.png">
 
@@ -44,6 +43,9 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 - The natural color palette links to the theme of plants and plant care. 
 - The headings, icons and body text are darker to ensure clear contrast and readability for the user across the site.
 - The green header and footer ensures clear contrast and delineation between sections.
+- Due to the lighthouse score for accessibility, the background color for the header and footer was adjusted:
+
+<img width="731" alt="image" src="https://user-images.githubusercontent.com/97494262/210070268-17725578-409a-4278-a99e-60e844ddb1b8.png">
 
 ### Typography
 <img width="896" alt="image" src="https://user-images.githubusercontent.com/97494262/209437426-7c754f60-85b0-4d60-9f17-04caedb8f635.png">
@@ -80,28 +82,60 @@ You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.co
 
 ## FEATURES/STRUCTURE
 
-### Welcome Area
+### Navigation
+- The users will have a choice of home, login/logout & register when visiting the site. 
+- For mobile devices, the navigation toggles to a hamburger menu.
+
+### Plant List
+- The users will have a list of posts with a title, excerpt and summary card of care required for each plant.
+- This summary card is later repeated in each plant detail post for continuity across the site.
+
+<img width="276" alt="image" src="https://user-images.githubusercontent.com/97494262/210070669-031252b8-33af-4c74-9efe-17c2b4278235.png">
+<img width="999" alt="image" src="https://user-images.githubusercontent.com/97494262/210070722-3dea018c-60c0-4793-847e-d4f9f2cacbdb.png">
+
+### Plant Detail
+- Each post has a short article about the plant including its care information in detail.
+- The structure of each post is consistent, starting with the card at the top and excerpt from the plant list and then the main content and bulleted list of care instructions at the end. 
+
+<img width="1144" alt="image" src="https://user-images.githubusercontent.com/97494262/210071425-5ef9d25e-45f6-4c66-8373-e594f0048770.png">
+
+<img width="968" alt="image" src="https://user-images.githubusercontent.com/97494262/210071401-56dd2bb4-83d0-4587-931a-3ef062a84776.png">
+
+### Likes
+- If the user isn't logged in, they will see the below information:
+
+<img width="673" alt="image" src="https://user-images.githubusercontent.com/97494262/210071488-dcd28c40-fe6c-418f-92f9-090d2cba1465.png">
+
+- If the user is logged in, they will be able to like the post:
+
+<img width="284" alt="image" src="https://user-images.githubusercontent.com/97494262/210071552-630d2e30-1c78-458f-83d8-4b8122a6c7c0.png">
+
+- The user is able to easily return to the home page using the go back button or clicking the logo at the top of the page.
+
+### Comments
+- If a post doesn't have any comments, the user will see the below if not logged in:
+
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/97494262/210071767-5a59d9be-2797-4f93-8de8-e647fa16103e.png">
+
+- If logged in, users will be encouraged to share their experience in caring for the plant they've read about:
+
+<img width="981" alt="image" src="https://user-images.githubusercontent.com/97494262/210071679-732036f7-0a99-4d22-a807-b822c2545ce7.png"> 
+
+### Register 
 - XX
 - XX
 
-### Game Score Area
-- XX
-
-### Game Controls 
+### Login/Logout 
 - XX
 - XX
 
-### Game Rules
-- XX
 
-### JavaScript Enable Message
-- XX
 
 ### Footer
 - XX
 - XX
 
-### Error 404
+### Error 404/403/500
 - XX
 - XX
 
