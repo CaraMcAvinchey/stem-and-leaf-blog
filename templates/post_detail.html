@@ -122,21 +122,6 @@
             </div>
             <div class="card-container col-lg-4 mb-4 mt-3 ">
                 {% if user.is_authenticated %}
-                <!-- alert if comment is posted, edited or deleted -->
-                <div class="element-card" id="post-comment-card">
-                    {% if commented %}
-                    <div class="alert alert-success" role="alert">
-                        Your comment has been successfully posted
-                    </div>
-                    {% elif comment_edited %}
-                    <div class="alert alert-success" role="alert">
-                        Your comment has been successfully edited
-                    </div>
-                    {% elif comment_deleted %}
-                    <div class="alert alert-success" role="alert">
-                        Your comment has been successfully deleted
-                    </div>
-                    {% endif %}
                     <!-- comment form -->
                     <h3>Leave a comment:</h3>
                     <p>Posting as: {{ user.username }}</p>
