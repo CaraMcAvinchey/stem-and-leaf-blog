@@ -122,14 +122,22 @@ Cara McAvinchey
 <img width="981" alt="image" src="https://user-images.githubusercontent.com/97494262/210071679-732036f7-0a99-4d22-a807-b822c2545ce7.png"> 
 
 ### Register 
-- XX
-- XX
+- The user will be able to easily sign up as a user using the below form.
+- If users are already registered, there is a link to easily navigate to login instead
+
+<img width="701" alt="image" src="https://user-images.githubusercontent.com/97494262/210072154-73833448-d460-49f4-958f-5ba1ebd5dae8.png">
 
 ### Login/Logout 
-- XX
-- XX
+- The users can easily sign in using the below form with an option to 'remember me' if desired.
+- If a user hasn't registered, there is a link to easily navigate to sing up instead.
 
+<img width="574" alt="image" src="https://user-images.githubusercontent.com/97494262/210072279-5f61cc40-a083-4994-905d-8edbfc3da545.png">
 
+<img width="439" alt="image" src="https://user-images.githubusercontent.com/97494262/210072557-8739b90b-7dbe-4a8a-8cbd-a8c90a6dfe2f.png">
+
+- The user is prompted with a message before logging out:
+- 
+<img width="439" alt="image" src="https://user-images.githubusercontent.com/97494262/210072389-f62bc7ca-1877-4ec5-8ff3-a7a14f74f583.png">
 
 ### Footer
 - XX
