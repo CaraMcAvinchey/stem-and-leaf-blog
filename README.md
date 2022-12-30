@@ -124,7 +124,11 @@ Cara McAvinchey
 
 <img width="981" alt="image" src="https://user-images.githubusercontent.com/97494262/210071679-732036f7-0a99-4d22-a807-b822c2545ce7.png"> 
 
-- The user will be able to edit their comment using a form and be alerted using a message that disappears after 3 seconds
+- The user will be able to edit their comment using a form and be alerted using a message that disappears after 3 seconds.
+
+<img width="1368" alt="image" src="https://user-images.githubusercontent.com/97494262/210083125-faa24f47-ec2b-432f-ac90-105375a49f08.png">
+
+<img width="1414" alt="image" src="https://user-images.githubusercontent.com/97494262/210083087-7ff6c85b-1770-4f47-b723-d03d993b955f.png">
 
 - The user will be able to delete their comment after being prompted and can go back if desired or will proceed and receive a success message:
 
