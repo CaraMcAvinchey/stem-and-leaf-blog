@@ -57,7 +57,7 @@ class PlantDetail(SuccessMessageMixin, View):
             comment.post = plant
             comment.save()
             messages.success(request,
-                             'Your comment has been uploaded successfully.')
+                             'Your comment has been uploaded for approval.')
         else:
             comment_form = CommentForm()
 
@@ -101,6 +101,7 @@ class CommentDelete(DeleteView):
 
     def get_success_url(self, *args, **kwargs):
         PlantDetail.comment_deleted = True
+        messages.success(self.request, 'Your comment has been deleted.')
         return reverse("post_detail", kwargs={"slug": self.object.post.slug})
 
 
@@ -125,7 +126,7 @@ class CommentEdit(UpdateView):
 
     def get_success_url(self, *args, **kwargs):
         """
-        Upon success returns user to the stock detail page.
+        Upon success returns user to the post detail page.
         """
         PlantDetail.comment_edited = True
         return reverse("post_detail", kwargs={"slug": self.object.post.slug})
