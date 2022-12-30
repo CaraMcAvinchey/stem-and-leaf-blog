@@ -19,7 +19,7 @@ Cara McAvinchey
 1. As a **site user**, I can **register an account** so that **I can interact with blog posts**.
 2. As a **site user**, I can **view a list of posts** so that **I can select one to read**.
 3. As a **site user**, I can **click on a post** so that **I can read the full article** and find out more about plant care.
-4. 4. As a **site user**, I can **view the number of likes on each post** so that **I can see which plants are popular.**
+4. As a **site user**, I can **view the number of likes on each post** so that **I can see which plants are popular.**
 5. As a **site user**, I can **like a post** so that **I can engage with the blog content**.
 6. As a **site user**, I can **view comments on a post** so that **I can read other user feedback**.
 7. As a **site user**, I can **leave comments on a post** so that **I can share my own feedback.**
@@ -30,10 +30,10 @@ Cara McAvinchey
 12. As a **site user**, I can **return to the home page** of the blog if there is an error so that **I don’t get lost on the website**.
 
 * For admin users:
-1. In order to **create and control the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.**
-2. In order to **finish writing or publish content later** as an **admin user**, **I can create draft posts.**
-3. In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel.
-4. In order to **maintain a positive commnity atmosphere** as an **admin user**, **I can approve/disapprove comments.**  
+13. In order to **create and control the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.**
+14. In order to **finish writing or publish content later** as an **admin user**, **I can create draft posts.**
+15. In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel.
+16. In order to **maintain a positive commnity atmosphere** as an **admin user**, **I can approve/disapprove comments.**  
  
 ## DESIGN CHOICES
 
@@ -224,9 +224,10 @@ Cara McAvinchey
 - You can view manual testing of the website [here](https://docs.google.com/spreadsheets/d/123Pia98Ms_Fe6at0hPnAWhcNrmeVc4X2RLYmD7VsqX4/edit?usp=sharing).
 
 ### Automatic Testing
+- Manual testing was done due to time constraints.
 
 ### Outstanding Defects
-- XX
+- There are no outstanding defects.
 
 ### Defects of Note
 - XX
@@ -237,7 +238,7 @@ Cara McAvinchey
 - 
 
 ### Keyboard Navigation
-- XX
+- The users will be able to use the tab button to navigate the website if required.
 
 ## TECHNOLOGIES USED
 - GitPod
