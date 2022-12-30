@@ -124,6 +124,14 @@ Cara McAvinchey
 
 <img width="981" alt="image" src="https://user-images.githubusercontent.com/97494262/210071679-732036f7-0a99-4d22-a807-b822c2545ce7.png"> 
 
+- The user will be able to edit their comment using a form and be alerted using a message that disappears after 3 seconds
+
+- The user will be able to delete their comment after being prompted and can go back if desired or will proceed and receive a success message:
+
+<img width="486" alt="Screenshot 2022-12-30 at 14 19 16" src="https://user-images.githubusercontent.com/97494262/210080212-009dfbe4-787d-448f-b498-97e3add086ae.png">
+
+<img width="1439" alt="image" src="https://user-images.githubusercontent.com/97494262/210080130-61cd8839-a2b1-4b88-a7cf-227fe27beb57.png">
+
 ### Register 
 - The user will be able to easily sign up as a user using the below form.
 - If users are already registered, there is a link to easily navigate to login instead
@@ -159,17 +167,17 @@ Cara McAvinchey
 <img width="538" alt="image" src="https://user-images.githubusercontent.com/97494262/210073183-e8f315ba-264c-47cc-a540-e16677fe583d.png">
 
 ### Features for Future Development
-- XX
-- XX
-- XX
+- It will become less efficient for the user to scroll through many posts in the list view so a search bar will allow users to find specific plants they want to read more about.
+- It would increase user experience to add a method to 'save' blog posts so users can keep their favourite plants in one place.
+- To increase user interactivity from readers, users could rate blog posts on how helpful the information was and give feedback.
 
 ## DATA MODEL
 <img width="484" alt="image" src="https://user-images.githubusercontent.com/97494262/209538748-6f3cdc41-16c5-43ab-94a8-2341239ffc78.png">
 
-- [-] C - Admin users can create blog posts, site users can create/register their own profile to interact with the posts.
+- [X] C - Site users can create/register their own profile to interact with the plant posts.
 - [X] R - Site users can open and read the plant blog posts and read comments from other users.
-- [-] U - Admin users can update blog posts content and plant care criteria (plant level, plant thirst, plant light).
-- [-] D - Admin users can delete blog posts and approve/disaprove comments.
+- [X] U - Site users can like a post, updating the details and analytics for a plant detail post.
+- [X] D - Site users can eliminate their like if desired on a plant detail post.
 
 <img width="477" alt="image" src="https://user-images.githubusercontent.com/97494262/209538824-f613791d-53b6-43e4-a305-f14a52026443.png">
 
@@ -186,6 +194,11 @@ Cara McAvinchey
 
 - CSS
    - No errors were found when passing through the [CSS validator]("https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en").
+
+<img width="907" alt="image" src="https://user-images.githubusercontent.com/97494262/210075568-6efc11bf-8f09-4ec8-8eae-c3936a1678df.png">
+
+- JavaScript
+   - No errors were found when passing through the [JS validator]("").
 
 ### Cross Browser and Cross Device Testing
 - The below combination of devices, browsers, and operating system were used to test the website. A range of viewport sizes were checked to see if users would have the same experience across multiple devices and browsers.
