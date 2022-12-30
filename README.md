@@ -84,10 +84,13 @@ Cara McAvinchey
 
 ### Navigation
 - The users will have a choice of home, login/logout & register when visiting the site. 
+- There is a subtle hover state on each of the navigation items for better user experience.
 - For mobile devices, the navigation toggles to a hamburger menu.
 
 ### Plant List
 - The users will have a list of posts with a title, excerpt and summary card of care required for each plant.
+- The image and title is linked, so users may click on either and be taken to the plant detail page.
+- There is a hover state on the title to show the user they can click on the post.
 - This summary card is later repeated in each plant detail post for continuity across the site.
 
 <img width="276" alt="image" src="https://user-images.githubusercontent.com/97494262/210070669-031252b8-33af-4c74-9efe-17c2b4278235.png">
@@ -129,23 +132,31 @@ Cara McAvinchey
 
 ### Login/Logout 
 - The users can easily sign in using the below form with an option to 'remember me' if desired.
-- If a user hasn't registered, there is a link to easily navigate to sing up instead.
+- If a user hasn't registered, there is a link to easily navigate to sign up instead.
 
 <img width="574" alt="image" src="https://user-images.githubusercontent.com/97494262/210072279-5f61cc40-a083-4994-905d-8edbfc3da545.png">
 
-<img width="439" alt="image" src="https://user-images.githubusercontent.com/97494262/210072557-8739b90b-7dbe-4a8a-8cbd-a8c90a6dfe2f.png">
-
 - The user is prompted with a message before logging out:
-- 
+
 <img width="439" alt="image" src="https://user-images.githubusercontent.com/97494262/210072389-f62bc7ca-1877-4ec5-8ff3-a7a14f74f583.png">
 
+- The user will receive a message that disappears after 3 seconds to say they have logged in/logged out:
+
+<img width="694" alt="image" src="https://user-images.githubusercontent.com/97494262/210072803-acb43896-c62a-4e41-803f-0aefaf0cc50c.png">
+
+<img width="704" alt="image" src="https://user-images.githubusercontent.com/97494262/210072771-813c77b7-c54c-4d51-b8ef-55683a9a3d2e.png">
+
 ### Footer
-- XX
-- XX
+- The footer links directly to the social media pages of the plant care blog.
+- There is a subtle hover state on each icon for better user experience.
 
 ### Error 404/403/500
-- XX
-- XX
+- There are error pages in place in case a user is taken to a restricted area or the page doesn't exist.
+- The return home button will take the user back to the plant list page.
+
+<img width="460" alt="image" src="https://user-images.githubusercontent.com/97494262/210073145-f3d43565-d722-4a8f-866c-2ed0e1fc50ec.png">
+<img width="613" alt="image" src="https://user-images.githubusercontent.com/97494262/210073167-f80d0d34-41c5-4fb9-a8ac-53da96d3631f.png">
+<img width="538" alt="image" src="https://user-images.githubusercontent.com/97494262/210073183-e8f315ba-264c-47cc-a540-e16677fe583d.png">
 
 ### Features for Future Development
 - XX
@@ -155,16 +166,16 @@ Cara McAvinchey
 ## DATA MODEL
 <img width="484" alt="image" src="https://user-images.githubusercontent.com/97494262/209538748-6f3cdc41-16c5-43ab-94a8-2341239ffc78.png">
 
-- [X] C - Admin users can create blog posts, site users can create/register their own profile to interact with the posts.
+- [-] C - Admin users can create blog posts, site users can create/register their own profile to interact with the posts.
 - [X] R - Site users can open and read the plant blog posts and read comments from other users.
-- [X] U - Admin users can update blog posts content and plant care criteria (plant level, plant thirst, plant light).
-- [X] D - Admin users can delete blog posts and approve/disaprove comments.
+- [-] U - Admin users can update blog posts content and plant care criteria (plant level, plant thirst, plant light).
+- [-] D - Admin users can delete blog posts and approve/disaprove comments.
 
 <img width="477" alt="image" src="https://user-images.githubusercontent.com/97494262/209538824-f613791d-53b6-43e4-a305-f14a52026443.png">
 
-- [X] C - Site users can create their own comments on each blog post.
+- [X] C - Site users can create their own comments using a form on each blog post.
 - [X] R - Site users can read comments from other users.
-- [X] U - Site users are able to update/edit their comments.
+- [X] U - Site users are able to update/edit their comments using a form.
 - [X] D - Site users are able to delete their comments.
 
 ## TESTING
