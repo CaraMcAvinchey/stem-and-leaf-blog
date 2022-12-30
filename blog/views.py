@@ -91,7 +91,7 @@ class CommentDelete(DeleteView):
     """
     If user is logged in:
     Direct user to delete_comment.html template
-    User will be prompted with a message to confirm.
+    User will be prompted with a message to confirm deletion.
     """
     model = Comment
     template_name = "delete_comment.html"
@@ -111,7 +111,7 @@ class CommentEdit(UpdateView):
     If user is logged in:
     Direct user to update_comment.html template,
     displaying ReviewForm for that specific review.
-    Post edited info back to the DB and return user to post.
+    Post edited info back to the database and return user to post.
     """
     model = Comment
     form_class = EditForm
@@ -122,6 +122,7 @@ class CommentEdit(UpdateView):
         Upon success prompt the user with a success message.
         """
         super().form_valid(form)
+        messages.success(self.request, 'Your comment has been edited.')
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self, *args, **kwargs):
