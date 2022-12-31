@@ -5,7 +5,7 @@ Cara McAvinchey
 
 ## Project Overview
 *  The Stem & Leaf blog is a place for plant care beginners to visit and learn about how to take care of their plants. Each blog post is dedicated to a popular house plant, with a short write up and care tips. 
-* You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.com/)
+* You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.com/).
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/97494262/209436822-8a40360c-cb65-4abf-bd98-5869aec18d12.png">
 
@@ -248,7 +248,9 @@ Cara McAvinchey
 - There are no outstanding defects.
 
 ### Defects of Note
-- XX
+- The user story for [OPEN A POST](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/8) had multiple challenges including styling issues with the summary card, the likes/comments area and rendering of the plant detail model information. 
+ - The styling challenges were solved using margins and restructuring of some div elements.
+ - The comments/likes area required some guidance from my mentor to establish what the user sees when logged in, logged out and restructred the template from there.
 
 ## ACCESSIBILITY
 
@@ -328,7 +330,7 @@ Cara McAvinchey
 
 ## CREDITS
 - The Code Institute 'I Think, Therefore I Blog' walkthrough project assisted and guided in the setup and basic structure of this project.
-- The Stockbook Project by Massimo Ranalli assisted with the setup of the edit/delete functions for comments.
+- The Stockbook Project by Massimo Ranalli assisted with the setup of the edit/delete functions for comments as well as the messaging alerts.
 - Code Institute Student Template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template).
 
 ### Media
