@@ -58,6 +58,8 @@ class PlantDetail(SuccessMessageMixin, View):
             comment.save()
             messages.success(request,
                              'Your comment has been uploaded for approval.')
+                             
+            comment_form = CommentForm()
         else:
             comment_form = CommentForm()
 
