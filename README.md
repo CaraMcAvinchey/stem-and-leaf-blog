@@ -198,10 +198,14 @@ Cara McAvinchey
    - No errors were returned when passing through the official [HTML validator]("https://validator.w3.org/nu/?doc=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F").
 
 **Post List**
-<img width="1405" alt="image" src="https://user-images.githubusercontent.com/97494262/210155812-608d88be-b9ea-4732-9125-b1ebd8f586bc.png">
+<img width="500" height="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210155812-608d88be-b9ea-4732-9125-b1ebd8f586bc.png">
    
 **Post Detail**
 <img width="1390" alt="image" src="https://user-images.githubusercontent.com/97494262/210156567-eb2b02a0-596a-4a52-ade9-213ee00dfbae.png">
+
+**Sign up**
+**Sign in**
+
 
 - CSS
    - No errors were found when passing through the [CSS validator]("https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en").
