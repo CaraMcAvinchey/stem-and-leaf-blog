@@ -30,8 +30,8 @@
 <div class="container">
     <div class="row">
         <div class="col card mb-2">
-            <div class="card-body">
-                <p class="card-text">{{ plant.content | safe }}</p>
+            <div class="card-body back-button">
+                <div class="card-text">{{ plant.content | safe }}</div>
                 <div>
                     <!-- post likes counter -->
                     {% if user.is_authenticated %}
@@ -62,16 +62,16 @@
                         {% endwith %}
                     </div>
                 </div>
-                <a href="{% url 'home' %}">
-                    <button class="btn btn-signup mt-4">Go Back</button>
-                </a>
+            </div>
+            <div>
+                <a class="btn btn-signup mt-4" href="{% url 'home' %}">Go Back</a>
             </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col">
-        <hr>
+            <hr>
         </div>
     </div>
     <!-- comments section -->
@@ -122,17 +122,16 @@
             </div>
             <div class="card-container col-lg-4 mb-4 mt-3 ">
                 {% if user.is_authenticated %}
-                    <!-- comment form -->
-                    <h3>Leave a comment:</h3>
-                    <p>Posting as: {{ user.username }}</p>
-                    <form method="post">
-                        {{ comment_form | crispy }}
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-signup btn-md mt-2">Submit</button>
-                    </form>
-                </div>
-                {% endif %}
+                <!-- comment form -->
+                <h3>Leave a comment:</h3>
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-signup btn-md mt-2">Submit</button>
+                </form>
             </div>
+            {% endif %}
         </div>
     </div>
 </div>
