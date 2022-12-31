@@ -45,10 +45,10 @@ Cara McAvinchey
 - The green header and footer ensures clear contrast and delineation between sections.
 - Due to the lighthouse score for accessibility, the background color for the header and footer was adjusted:
 
-<img width="731" alt="image" src="https://user-images.githubusercontent.com/97494262/210070268-17725578-409a-4278-a99e-60e844ddb1b8.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/97494262/210070268-17725578-409a-4278-a99e-60e844ddb1b8.png">
 
 ### Typography
-<img width="896" alt="image" src="https://user-images.githubusercontent.com/97494262/209437426-7c754f60-85b0-4d60-9f17-04caedb8f635.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/209437426-7c754f60-85b0-4d60-9f17-04caedb8f635.png">
 
 - The font combination was chosen using guidance article from Mai Knoblovits [here](https://artisanthemes.io/great-google-font-combinations-ready-use/).
 - The logo and headings use Amatic SC with a fallback of cursive and the body text uses Roboto Condensed with a fallback of san-serif.
@@ -94,15 +94,15 @@ Cara McAvinchey
 - This summary card is later repeated in each plant detail post for continuity across the site.
 
 <img width="276" alt="image" src="https://user-images.githubusercontent.com/97494262/210070669-031252b8-33af-4c74-9efe-17c2b4278235.png">
-<img width="999" alt="image" src="https://user-images.githubusercontent.com/97494262/210070722-3dea018c-60c0-4793-847e-d4f9f2cacbdb.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210070722-3dea018c-60c0-4793-847e-d4f9f2cacbdb.png">
 
 ### Plant Detail
 - Each post has a short article about the plant including its care information in detail.
 - The structure of each post is consistent, starting with the card at the top and excerpt from the plant list and then the main content and bulleted list of care instructions at the end. 
 
-<img width="1144" alt="image" src="https://user-images.githubusercontent.com/97494262/210071425-5ef9d25e-45f6-4c66-8373-e594f0048770.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/97494262/210071425-5ef9d25e-45f6-4c66-8373-e594f0048770.png">
 
-<img width="968" alt="image" src="https://user-images.githubusercontent.com/97494262/210071401-56dd2bb4-83d0-4587-931a-3ef062a84776.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210071401-56dd2bb4-83d0-4587-931a-3ef062a84776.png">
 
 ### Likes
 - If the user isn't logged in, they will see the below information:
@@ -122,19 +122,19 @@ Cara McAvinchey
 
 - If logged in, users will be encouraged to share their experience in caring for the plant they've read about:
 
-<img width="981" alt="image" src="https://user-images.githubusercontent.com/97494262/210071679-732036f7-0a99-4d22-a807-b822c2545ce7.png"> 
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210071679-732036f7-0a99-4d22-a807-b822c2545ce7.png"> 
 
 - The user will be able to edit their comment using a form and be alerted using a message that disappears after 3 seconds.
 
-<img width="1368" alt="image" src="https://user-images.githubusercontent.com/97494262/210083125-faa24f47-ec2b-432f-ac90-105375a49f08.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210083125-faa24f47-ec2b-432f-ac90-105375a49f08.png">
 
-<img width="1414" alt="image" src="https://user-images.githubusercontent.com/97494262/210083087-7ff6c85b-1770-4f47-b723-d03d993b955f.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210083087-7ff6c85b-1770-4f47-b723-d03d993b955f.png">
 
 - The user will be able to delete their comment after being prompted and can go back if desired or will proceed and receive a success message:
 
 <img width="486" alt="Screenshot 2022-12-30 at 14 19 16" src="https://user-images.githubusercontent.com/97494262/210080212-009dfbe4-787d-448f-b498-97e3add086ae.png">
 
-<img width="1439" alt="image" src="https://user-images.githubusercontent.com/97494262/210080130-61cd8839-a2b1-4b88-a7cf-227fe27beb57.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210080130-61cd8839-a2b1-4b88-a7cf-227fe27beb57.png">
 
 ### Register 
 - The user will be able to easily sign up as a user using the below form.
@@ -215,12 +215,12 @@ Cara McAvinchey
 - CSS
    - No errors were found when passing through the [CSS validator]("https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en").
 
-<img width="907" alt="image" src="https://user-images.githubusercontent.com/97494262/210075568-6efc11bf-8f09-4ec8-8eae-c3936a1678df.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210075568-6efc11bf-8f09-4ec8-8eae-c3936a1678df.png">
 
 - JavaScript
    - No errors were found when passing through the [JS validator]("https://jshint.com/").
    
-<img width="1008" alt="image" src="https://user-images.githubusercontent.com/97494262/210155726-28197ad7-5f34-49d1-bc1c-5991f2b29533.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210155726-28197ad7-5f34-49d1-bc1c-5991f2b29533.png">
 
 ### Cross Browser and Cross Device Testing
 - The below combination of devices, browsers, and operating system were used to test the website. A range of viewport sizes were checked to see if users would have the same experience across multiple devices and browsers.
@@ -276,7 +276,7 @@ Cara McAvinchey
 **Step 1:** Create a new app in Heroku, choose a unique name and region.
 **Step 2:** Login to ElephantSQL, access the dashboard and create a new instance (input a name, select a region).
 **Step 3:** Return to dashboard, copy the database URL:
-<img width="1074" alt="image" src="https://user-images.githubusercontent.com/97494262/209531384-85d95cc3-a381-4c3c-b56f-215238e0daf8.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/97494262/209531384-85d95cc3-a381-4c3c-b56f-215238e0daf8.png">
 
 **Step 4:** Create env.py file (ensure it is included in .gitignore file) and add environment the below variables. Paste the URL from above:
 
@@ -284,7 +284,7 @@ Cara McAvinchey
 
 **Step 5:** Include a secret key in the variables:
 
-<img width="953" alt="Screenshot 2022-12-26 at 11 25 13" src="https://user-images.githubusercontent.com/97494262/209531979-9ba177cc-3e44-48a7-80dc-884d06932f54.png">
+<img width="800" alt="Screenshot 2022-12-26 at 11 25 13" src="https://user-images.githubusercontent.com/97494262/209531979-9ba177cc-3e44-48a7-80dc-884d06932f54.png">
 
 **Step 6:** Include the below code to settings.py file:
 
@@ -308,11 +308,11 @@ Cara McAvinchey
 
 <img width="407" alt="image" src="https://user-images.githubusercontent.com/97494262/209533445-8f6670c5-490b-4294-95cf-febaaaed2ab2.png">
 
-<img width="853" alt="image" src="https://user-images.githubusercontent.com/97494262/209533629-ab3fb31b-f096-4305-996e-970e4c950a3f.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/209533629-ab3fb31b-f096-4305-996e-970e4c950a3f.png">
 
 **Step 11:** Add template directories in settings.py, add Heroku host name to allowed hosts and add directory files:
 
-<img width="746" alt="image" src="https://user-images.githubusercontent.com/97494262/209533879-b8284837-e7a1-4315-83e6-9b88d2125882.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/97494262/209533879-b8284837-e7a1-4315-83e6-9b88d2125882.png">
 
 <img width="501" alt="image" src="https://user-images.githubusercontent.com/97494262/209534100-46723f98-7bd6-40ed-91c1-5226ad6e950d.png">
 
