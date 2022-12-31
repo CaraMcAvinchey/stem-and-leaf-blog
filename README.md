@@ -174,6 +174,7 @@ Cara McAvinchey
 - It will become less efficient for the user to scroll through many posts in the list view so a search bar will allow users to find specific plants they want to read more about.
 - It would increase user experience to add a method to 'save' blog posts so users can keep their favourite plants in one place.
 - To increase user interactivity from readers, users could rate blog posts on how helpful the information was and give feedback.
+- Pending comments can be added so users are aware they are awaiting approval. 
 
 ## DATA MODEL
 <img width="484" alt="image" src="https://user-images.githubusercontent.com/97494262/209538748-6f3cdc41-16c5-43ab-94a8-2341239ffc78.png">
@@ -196,13 +197,21 @@ Cara McAvinchey
 - HTML
    - No errors were returned when passing through the official [HTML validator]("https://validator.w3.org/nu/?doc=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F").
 
+**Post List**
+<img width="1405" alt="image" src="https://user-images.githubusercontent.com/97494262/210155812-608d88be-b9ea-4732-9125-b1ebd8f586bc.png">
+   
+**Post Detail**
+<img width="1390" alt="image" src="https://user-images.githubusercontent.com/97494262/210156567-eb2b02a0-596a-4a52-ade9-213ee00dfbae.png">
+
 - CSS
    - No errors were found when passing through the [CSS validator]("https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en").
 
 <img width="907" alt="image" src="https://user-images.githubusercontent.com/97494262/210075568-6efc11bf-8f09-4ec8-8eae-c3936a1678df.png">
 
 - JavaScript
-   - No errors were found when passing through the [JS validator]("").
+   - No errors were found when passing through the [JS validator]("https://jshint.com/").
+   
+<img width="1008" alt="image" src="https://user-images.githubusercontent.com/97494262/210155726-28197ad7-5f34-49d1-bc1c-5991f2b29533.png">
 
 ### Cross Browser and Cross Device Testing
 - The below combination of devices, browsers, and operating system were used to test the website. A range of viewport sizes were checked to see if users would have the same experience across multiple devices and browsers.
@@ -235,7 +244,9 @@ Cara McAvinchey
 ## ACCESSIBILITY
 
 ### Lighthouse Audit
-- 
+- The deployed website was run through lighthouse to check performance, accessibility, best practices and SEO scores.
+
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/97494262/210155754-2d11ca71-a553-47a9-a94b-41fd4c1aebd9.png">
 
 ### Keyboard Navigation
 - The users will be able to use the tab button to navigate the website if required.
