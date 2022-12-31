@@ -7,7 +7,7 @@ Cara McAvinchey
 *  The Stem & Leaf blog is a place for plant care beginners to visit and learn about how to take care of their plants. Each blog post is dedicated to a popular house plant, with a short write up and care tips. 
 * You can view the deployed website [here](https://stem-and-leaf-blog.herokuapp.com/)
 
-<img width="1028" alt="image" src="https://user-images.githubusercontent.com/97494262/209436822-8a40360c-cb65-4abf-bd98-5869aec18d12.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/97494262/209436822-8a40360c-cb65-4abf-bd98-5869aec18d12.png">
 
 ## UX
 
@@ -198,19 +198,19 @@ Cara McAvinchey
    - No errors were returned when passing through the official [HTML validator]("https://validator.w3.org/nu/?doc=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F").
 
 **Post List**
-<img width="1000" alt="image" src="https://user-images.githubusercontent.com/97494262/210156718-b0e52c29-0edf-46b7-9e13-eed62b1bb787.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210156718-b0e52c29-0edf-46b7-9e13-eed62b1bb787.png">
    
 **Post Detail**
-<img width="1390" alt="image" src="https://user-images.githubusercontent.com/97494262/210156567-eb2b02a0-596a-4a52-ade9-213ee00dfbae.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210156567-eb2b02a0-596a-4a52-ade9-213ee00dfbae.png">
 
 **Sign up**
-<img width="1394" alt="image" src="https://user-images.githubusercontent.com/97494262/210156724-f2aab13c-453a-4556-9a5a-af64cff6f888.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210156724-f2aab13c-453a-4556-9a5a-af64cff6f888.png">
 
 **Sign in**
-<img width="1396" alt="image" src="https://user-images.githubusercontent.com/97494262/210156731-bf8dfff2-c326-4ebb-a826-905e213f9536.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210156731-bf8dfff2-c326-4ebb-a826-905e213f9536.png">
 
 **Edit Comment**
-<img width="1400" alt="image" src="https://user-images.githubusercontent.com/97494262/210156740-9699a4c3-1671-489f-b869-760ba3de554f.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210156740-9699a4c3-1671-489f-b869-760ba3de554f.png">
 
 - CSS
    - No errors were found when passing through the [CSS validator]("https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcaramcavinchey.github.io%2Frock-paper-scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en").
