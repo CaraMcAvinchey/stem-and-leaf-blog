@@ -9,6 +9,50 @@ Cara McAvinchey
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/97494262/209436822-8a40360c-cb65-4abf-bd98-5869aec18d12.png">
 
+## TABLE OF CONTENTS
+- [STEM & LEAF - A PLANT CARE SPACE FOR BEGINNERS](#stem---leaf---a-plant-care-space-for-beginners)
+  * [Author](#author)
+  * [Project Overview](#project-overview)
+  * [UX](#ux)
+    + [Project Goal](#project-goal)
+    + [User Stories](#user-stories)
+  * [DESIGN CHOICES](#design-choices)
+    + [Colors](#colors)
+    + [Typography](#typography)
+    + [Images/Icons](#images-icons)
+    + [Animations](#animations)
+    + [Responsiveness](#responsiveness)
+  * [WIREFRAMES](#wireframes)
+    + [Post List](#post-list)
+    + [Post Detail](#post-detail)
+  * [FEATURES/STRUCTURE](#features-structure)
+    + [Navigation](#navigation)
+    + [Plant List](#plant-list)
+    + [Plant Detail](#plant-detail)
+    + [Likes](#likes)
+    + [Comments](#comments)
+    + [Register](#register)
+    + [Login/Logout](#login-logout)
+    + [Footer](#footer)
+    + [Error 404/403/500](#error-404-403-500)
+    + [Features for Future Development](#features-for-future-development)
+  * [DATA MODEL](#data-model)
+  * [TESTING](#testing)
+    + [Validation Testing](#validation-testing)
+    + [Cross Browser and Cross Device Testing](#cross-browser-and-cross-device-testing)
+    + [Manual Testing](#manual-testing)
+    + [Automatic Testing](#automatic-testing)
+    + [Outstanding Defects](#outstanding-defects)
+    + [Defects of Note](#defects-of-note)
+  * [ACCESSIBILITY](#accessibility)
+    + [Lighthouse Audit](#lighthouse-audit)
+    + [Keyboard Navigation](#keyboard-navigation)
+  * [TECHNOLOGIES USED](#technologies-used)
+  * [DEPLOYMENT](#deployment)
+  * [CREDITS](#credits)
+    + [Media](#media)
+  * [ACKNOWLEDGEMENTS](#acknowledgements)
+
 ## UX
 
 ### Project Goal
@@ -33,7 +77,7 @@ Cara McAvinchey
 13. In order to **create and control the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.**
 14. In order to **finish writing or publish content later** as an **admin user**, **I can create draft posts.**
 15. In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel.
-16. In order to **maintain a positive commnity atmosphere** as an **admin user**, **I can approve/disapprove comments.**  
+16. In order to **maintain a positive community atmosphere** as an **admin user**, **I can approve/disapprove comments.**  
  
 ## DESIGN CHOICES
 
@@ -89,7 +133,7 @@ Cara McAvinchey
 
 ### Plant List
 - The users will have a list of posts with a title, excerpt and summary card of care required for each plant.
-- The image and title is linked, so users may click on either and be taken to the plant detail page.
+- The image and title are linked, so users may click on either and be taken to the plant detail page.
 - There is a hover state on the title to show the user they can click on the post.
 - This summary card is later repeated in each plant detail post for continuity across the site.
 
@@ -250,7 +294,7 @@ Cara McAvinchey
 ### Defects of Note
 - The user story for [OPEN A POST](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/8) had multiple challenges including styling issues with the summary card, the likes/comments area and rendering of the plant detail model information. 
  - The styling challenges were solved using margins and restructuring of some div elements.
- - The comments/likes area required some guidance from my mentor to establish what the user sees when logged in, logged out and restructred the template from there.
+ - The comments/likes area required some guidance from my mentor to establish what the user sees when logged in, logged out and restructured the template from there.
 
 ## ACCESSIBILITY
 
