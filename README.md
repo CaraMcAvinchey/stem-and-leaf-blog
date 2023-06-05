@@ -38,15 +38,6 @@ Cara McAvinchey
     + [Features for Future Development](#features-for-future-development)
   * [DATA MODEL](#data-model)
   * [TESTING](#testing)
-    + [Validation Testing](#validation-testing)
-    + [Cross Browser and Cross Device Testing](#cross-browser-and-cross-device-testing)
-    + [Manual Testing](#manual-testing)
-    + [Automatic Testing](#automatic-testing)
-    + [Outstanding Defects](#outstanding-defects)
-    + [Defects of Note](#defects-of-note)
-  * [ACCESSIBILITY](#accessibility)
-    + [Lighthouse Audit](#lighthouse-audit)
-    + [Keyboard Navigation](#keyboard-navigation)
   * [TECHNOLOGIES USED](#technologies-used)
   * [DEPLOYMENT](#deployment)
   * [CREDITS](#credits)
@@ -235,21 +226,38 @@ Cara McAvinchey
 - [X] U - Site users are able to update/edit their comments using a form.
 - [X] D - Site users are able to delete their comments.
 
-## Testing
+## TESTING
 
 Please refer to the [TESTING.md](TESTING.md) file for all testing performed.
 
-## TECHNOLOGIES USED
-- GitPod
-- GitHub
+## Technologies
+### Languages
+- HTML, CSS, JavaScript, Python
+
+### Database
+- sqlite3, ElephantSQL
+
+### Frameworks
 - Django
 - Bootstrap
-- Cloudinary
+
+### Libraries & Packages
+- Font Awesome
+- Django allauth
+- Django Crispy Forms
 - Summernote
-- Crispy Forms
-- Heroku
+- gunicorn
+- psycopg2
+
+### Programs
+- GitPod
+- GitHub
+- Favicon.io
 - Balsamiq
-- Fontawesome
+- Diagrams.net
+- Tiny PNG
+- Cloudinary
+- Heroku
 
 ## DEPLOYMENT
 
