@@ -319,44 +319,89 @@ Cara McAvinchey
 - Fontawesome
 
 ## DEPLOYMENT
-**Step 1:** Create a new app in Heroku, choose a unique name and region.
-**Step 2:** Login to ElephantSQL, access the dashboard and create a new instance (input a name, select a region).
-**Step 3:** Return to dashboard, copy the database URL:
-<img width="800" alt="image" src="https://user-images.githubusercontent.com/97494262/209531384-85d95cc3-a381-4c3c-b56f-215238e0daf8.png">
 
-**Step 4:** Create env.py file (ensure it is included in .gitignore file) and add environment the below variables. Paste the URL from above:
+### ElephantSQL
+1. Login to ElephantSQL, access the dashboard and create a new instance (input a name, choose tiny turtle, select a region).
+2. Return to the dashcoard, copy the URL.
 
+### Heroku
+1. Create a new app in Heroku, choose a unique name and region.
+2. Go to settings and add a new config var of ``` DATABASE_URL ```python with the value of the URL from ElephantSQL.
+3. Add host name of the Heroku app name to ALLOWED HOSTS in settings.py:
+
+```python
+ALLOWED_HOSTS = ['{heroku deployed site URL here}', 'localhost' ]
+```
+### GitHub/GitPod
+1. Create a new repository on GitHub, open a new workspace with GitPod.
+2. Install django ```pip3 install 'django<4```python to install Django 3.2 the LTS (Long Term Support) version.
+3. Create a new project and run the server to see if the app has installed.
+4. Run migrations, create a super-user with a username, email and password. 
+5. Install ```  pip3 install dj_database_url==0.5.0 psycopg2 ``` and freeze requirements ``` pip freeze > requirements.txt```
+6. Add ``` import os``` and ```import dj_database_url``` to settings.py
+7. Connect the new database, paste in the ElephantSQL URL (do not commit at this stage):
+ 
+```python
+ # DATABASES = {
+ #     'default': {
+ #         'ENGINE': 'django.db.backends.sqlite3',
+ #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+ #     }
+ # }
+ 
+ DATABASES = {
+     'default': dj_database_url.parse('your-database-url-here')
+ }
+```
+8. Ensure connection to the external database, run ```python3 manage.py showmigrations``` then run ```python3 manage.py migrate```
+ <img width="740" alt="image" src="https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/4d3f4186-3d58-4cff-8f27-8fc8c77edf58">
+9. Create a new superuser for the new database, same as above.
+10. Create an if else statement to setup development and external databases:
+
+ ```python
+ if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+      'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
+      }
+    }
+ ```
+11. Install ```pip3 install gunicorn``` and run ``` pip freeze > requirements.txt```
+12. Create a Procfile in the root directory and include ```web: gunicorn project_name.wsgi:applications```
+13. Generate a SECRET_KEY, add it to Heroku config vars.
+14. Create env.py file (ensure it is included in .gitignore file) and add the SECRET_KEY & DATABASE_URL to environment variables:
 <img width="372" alt="image" src="https://user-images.githubusercontent.com/97494262/209531222-599282ee-2c54-490f-b543-1f09e5255490.png">
-
-**Step 5:** Include a secret key in the variables:
-
-<img width="800" alt="Screenshot 2022-12-26 at 11 25 13" src="https://user-images.githubusercontent.com/97494262/209531979-9ba177cc-3e44-48a7-80dc-884d06932f54.png">
-
-**Step 6:** Include the below code to settings.py file:
+15. Edit settings.py to the below:
+```python
+SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
+```
+```python
+DEBUG = 'DEVELOPMENT' in os.environ
+```
+![image](https://github.com/CaraMcAvinchey/purrfect-sitters/assets/97494262/ceb9f1d4-35e8-47cd-ba04-6cd07bd8fe37)
 
 <img width="301" alt="image" src="https://user-images.githubusercontent.com/97494262/209532128-acaa1e29-edea-45c3-93ce-2caaf0f71862.png">
 
-**Step 7:** Link the database in settings.py and migrate then push to GitHub:
+19. Add, commit and push to GitHub.
+20. Go to Heroku, add ```DISABLE_COLLECT_STATIC = 1``` to Heroku config vars.
+23. Connect the project to the GitHub repository using personal account login.
 
-<img width="303" alt="image" src="https://user-images.githubusercontent.com/97494262/209532393-5283592f-5caf-4e81-b3fd-9d20bd62b111.png">
-
-**Step 8:** In Heroku, add three config vars:
-
-<img width="243" alt="image" src="https://user-images.githubusercontent.com/97494262/209532605-04bff00b-951f-4084-9ad5-6eff111ac6bf.png">
-
-<img width="350" alt="image" src="https://user-images.githubusercontent.com/97494262/209532533-e9b3d879-a40a-4335-a56b-3c0e5c370a8a.png">
-
-**Step 9:** Login to Cloudinary, copy the API Environmental variable to dashboard and add to env.py (see screenshot above) & to Heroku config vars:
+24. Login to Cloudinary, copy the API Environmental variable to dashboard and add to env.py (see screenshot above) & to Heroku config vars:
 
 <img width="571" alt="image" src="https://user-images.githubusercontent.com/97494262/209533286-4a79143c-6568-4055-99fc-76dd5821a02b.png">
 
-**Step 10:** Add cloudinary to installed apps in settings.py, add static/media file settings:
+27. Add cloudinary to installed apps in settings.py, add static/media file settings:
 
 <img width="407" alt="image" src="https://user-images.githubusercontent.com/97494262/209533445-8f6670c5-490b-4294-95cf-febaaaed2ab2.png">
 
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/209533629-ab3fb31b-f096-4305-996e-970e4c950a3f.png">
 
-**Step 11:** Add template directories in settings.py, add Heroku host name to allowed hosts and add directory files:
+28. Add template directories in settings.py, add Heroku host name to allowed hosts and add directory files:
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/97494262/209533879-b8284837-e7a1-4315-83e6-9b88d2125882.png">
 
@@ -364,13 +409,8 @@ Cara McAvinchey
 
 <img width="313" alt="image" src="https://user-images.githubusercontent.com/97494262/209534271-772afed4-f299-45dc-b72d-d0843b7ad189.png">
 
-**Step 12:** Create a Procfile, then commit and push to GitHub:
-
-<img width="504" alt="image" src="https://user-images.githubusercontent.com/97494262/209534389-5b0cdd3c-54f7-44e8-8a21-99068431365a.png">
-
-**Step 13:** Connect GitHub account in Heroku, connect and deploy branch. Open app and check:
-
-<img width="421" alt="image" src="https://user-images.githubusercontent.com/97494262/209534580-c03fa4fd-8e52-487b-8ecc-23563fd30327.png">
+25. Go to settings in Heroku and perform a manual deployment and check for any issues.
+36. Go to Heroku settings, enable automatic deployments.
 
 ## CREDITS
 - The Code Institute 'I Think, Therefore I Blog' walkthrough project assisted and guided in the setup and basic structure of this project.
