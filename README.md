@@ -318,6 +318,7 @@ else:
 13. Generate a SECRET_KEY, add it to Heroku config vars.
 14. Create env.py file (ensure it is included in .gitignore file) and add the SECRET_KEY & DATABASE_URL to environment variables:
 <img width="372" alt="image" src="https://user-images.githubusercontent.com/97494262/209531222-599282ee-2c54-490f-b543-1f09e5255490.png">
+
 15. Edit settings.py to the below:
 ```python
 SECRET_KEY = os.environ.get('SECRET_KEY', ' ')
