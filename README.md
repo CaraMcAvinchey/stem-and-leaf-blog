@@ -355,6 +355,7 @@ ALLOWED_HOSTS = ['{heroku deployed site URL here}', 'localhost' ]
 ```
 8. Ensure connection to the external database, run ```python3 manage.py showmigrations``` then run ```python3 manage.py migrate```
  <img width="740" alt="image" src="https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/4d3f4186-3d58-4cff-8f27-8fc8c77edf58">
+
 9. Create a new superuser for the new database, same as above.
 10. Create an if else statement to setup development and external databases:
 
