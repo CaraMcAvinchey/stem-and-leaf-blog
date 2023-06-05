@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.views.generic import DeleteView, UpdateView
 from django.views.generic.base import TemplateView
 from django.utils.decorators import method_decorator
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Plant, Comment
 from .forms import CommentForm, EditForm
 
@@ -75,7 +75,7 @@ class PlantDetail(SuccessMessageMixin, View):
         )
 
 
-class PostLike(View):
+class PostLike(LoginRequiredMixin, View):
 
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Plant, slug=slug)
@@ -87,8 +87,7 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-@method_decorator(login_required, name="dispatch")
-class CommentDelete(DeleteView):
+class CommentDelete(LoginRequiredMixin, DeleteView):
     """
     If user is logged in:
     Direct user to delete_comment.html template
@@ -106,8 +105,7 @@ class CommentDelete(DeleteView):
         return reverse("post_detail", kwargs={"slug": self.object.post.slug})
 
 
-@method_decorator(login_required, name="dispatch")
-class CommentEdit(UpdateView):
+class CommentEdit(LoginRequiredMixin, UpdateView):
     """
     If user is logged in:
     Direct user to update_comment.html template,
