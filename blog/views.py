@@ -6,7 +6,6 @@ from django.views.generic import DeleteView, UpdateView
 from django.views.generic.base import TemplateView
 from django.utils.decorators import method_decorator
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.core.exceptions import PermissionDenied
 from .models import Plant, Comment
 from .forms import CommentForm, EditForm
 
@@ -99,19 +98,12 @@ class CommentDelete(LoginRequiredMixin, DeleteView):
     template_name = "delete_comment.html"
 
     def delete(self, request, *args, **kwargs):
-        comment = self.get_object()
-        if comment.post.author != self.request.user:
-            raise PermissionDenied
-
         return super(CommentDelete, self).delete(request, *args, **kwargs)
 
     def get_success_url(self, *args, **kwargs):
         PlantDetail.comment_deleted = True
         messages.success(self.request, 'Your comment has been deleted.')
         return reverse("post_detail", kwargs={"slug": self.object.post.slug})
-
-    def handle_no_permission(self):
-        return render(self.request, '403.html', status=403)
 
 
 class CommentEdit(LoginRequiredMixin, UpdateView):
@@ -129,10 +121,6 @@ class CommentEdit(LoginRequiredMixin, UpdateView):
         """
         Upon success prompt the user with a success message.
         """
-        comment = self.get_object()
-        if comment.post.author != self.request.user:
-            raise PermissionDenied
-
         super().form_valid(form)
         messages.success(self.request, 'Your comment has been edited.')
         return HttpResponseRedirect(self.get_success_url())
@@ -143,9 +131,6 @@ class CommentEdit(LoginRequiredMixin, UpdateView):
         """
         PlantDetail.comment_edited = True
         return reverse("post_detail", kwargs={"slug": self.object.post.slug})
-
-    def handle_no_permission(self):
-        return render(self.request, '403.html', status=403)
 
 
 class Page403(TemplateView):
