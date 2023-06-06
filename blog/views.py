@@ -6,6 +6,7 @@ from django.views.generic import DeleteView, UpdateView
 from django.views.generic.base import TemplateView
 from django.utils.decorators import method_decorator
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import UserPassesTestMixin
 from .models import Plant, Comment
 from .forms import CommentForm, EditForm
 
@@ -88,7 +89,7 @@ class PostLike(LoginRequiredMixin, View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class CommentDelete(LoginRequiredMixin, DeleteView):
+class CommentDelete(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """
     If user is logged in:
     Direct user to delete_comment.html template
@@ -96,6 +97,10 @@ class CommentDelete(LoginRequiredMixin, DeleteView):
     """
     model = Comment
     template_name = "delete_comment.html"
+
+    def test_func(self):
+        comment = self.get_object()
+        return self.request.user.username == comment.name
 
     def delete(self, request, *args, **kwargs):
         return super(CommentDelete, self).delete(request, *args, **kwargs)
@@ -106,7 +111,7 @@ class CommentDelete(LoginRequiredMixin, DeleteView):
         return reverse("post_detail", kwargs={"slug": self.object.post.slug})
 
 
-class CommentEdit(LoginRequiredMixin, UpdateView):
+class CommentEdit(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     If user is logged in:
     Direct user to update_comment.html template,
@@ -116,6 +121,10 @@ class CommentEdit(LoginRequiredMixin, UpdateView):
     model = Comment
     form_class = EditForm
     template_name = "edit_comment.html"
+
+    def test_func(self):
+        comment = self.get_object()
+        return self.request.user.username == comment.name
 
     def form_valid(self, form):
         """
