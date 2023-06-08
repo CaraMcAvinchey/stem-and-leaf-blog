@@ -9,23 +9,23 @@ Cara McAvinchey
 
 <img width="700" alt="image" src="https://user-images.githubusercontent.com/97494262/209436822-8a40360c-cb65-4abf-bd98-5869aec18d12.png">
 
-## TABLE OF CONTENTS
+## Table of Contents
 - [STEM & LEAF - A PLANT CARE SPACE FOR BEGINNERS](#stem---leaf---a-plant-care-space-for-beginners)
   * [Author](#author)
   * [Project Overview](#project-overview)
   * [UX](#ux)
     + [Project Goal](#project-goal)
     + [User Stories](#user-stories)
-  * [DESIGN CHOICES](#design-choices)
+  * [Design Choices](#design-choices)
     + [Colors](#colors)
     + [Typography](#typography)
     + [Images/Icons](#images-icons)
     + [Animations](#animations)
     + [Responsiveness](#responsiveness)
-  * [WIREFRAMES](#wireframes)
+  * [Wireframes](#wireframes)
     + [Post List](#post-list)
     + [Post Detail](#post-detail)
-  * [FEATURES/STRUCTURE](#features-structure)
+  * [Features/Structure](#features-structure)
     + [Navigation](#navigation)
     + [Plant List](#plant-list)
     + [Plant Detail](#plant-detail)
@@ -36,13 +36,13 @@ Cara McAvinchey
     + [Footer](#footer)
     + [Error 404/403/500](#error-404-403-500)
     + [Features for Future Development](#features-for-future-development)
-  * [DATA MODEL](#data-model)
-  * [TESTING](#testing)
-  * [TECHNOLOGIES USED](#technologies-used)
-  * [DEPLOYMENT](#deployment)
-  * [CREDITS](#credits)
+  * [Data Model](#data-model)
+  * [Testing](#testing)
+  * [Technologies Used](#technologies-used)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
     + [Media](#media)
-  * [ACKNOWLEDGEMENTS](#acknowledgements)
+  * [Acknowledgements](#acknowledgements)
 
 ## UX
 
@@ -70,7 +70,7 @@ Cara McAvinchey
 15. In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel.
 16. In order to **maintain a positive community atmosphere** as an **admin user**, **I can approve/disapprove comments.**  
  
-## DESIGN CHOICES
+## Design Choices
 
 ### Colors
 <img width="538" alt="image" src="https://user-images.githubusercontent.com/97494262/209437405-63db90ed-fd86-4285-8a19-002c73a2d1a7.png">
@@ -78,9 +78,6 @@ Cara McAvinchey
 - The natural color palette links to the theme of plants and plant care. 
 - The headings, icons and body text are darker to ensure clear contrast and readability for the user across the site.
 - The green header and footer ensures clear contrast and delineation between sections.
-- Due to the lighthouse score for accessibility, the background color for the header and footer was adjusted:
-
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/97494262/210070268-17725578-409a-4278-a99e-60e844ddb1b8.png">
 
 ### Typography
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/209437426-7c754f60-85b0-4d60-9f17-04caedb8f635.png">
@@ -103,7 +100,7 @@ Cara McAvinchey
 - The website was designed mobile-first using flexbox to ensure responsiveness throughout the website.
 - The standard grid from Bootstrap was used to achieve this.
 
-## WIREFRAMES
+## Wireframes
 
 ### Post List
 - The post list page was designed using cards to show a quick summary of each plant.
@@ -117,7 +114,7 @@ Cara McAvinchey
 
 <img width="611" alt="image" src="https://user-images.githubusercontent.com/97494262/209437385-b8be9fe9-bbbb-4110-a9af-e0f5239f3cc9.png">
 
-## FEATURES/STRUCTURE
+## Features/Structure
 
 ### Navigation
 - The users will have a choice of home, login/logout & register when visiting the site. 
@@ -214,7 +211,7 @@ Cara McAvinchey
 - To increase user interactivity from readers, users could rate blog posts on how helpful the information was and give feedback.
 - Pending comments can be added so users are aware they are awaiting approval. 
 
-## DATA MODEL
+## Data Model
 
 <img width="718" alt="Screenshot 2023-06-08 at 19 30 04" src="https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/5fead75d-78fe-4ff8-ae46-ce7f02364242">
 
@@ -240,7 +237,7 @@ Cara McAvinchey
 - [X] U - Site users are able to update/edit their comments using a form.
 - [X] D - Site users are able to delete their comments.
 
-## TESTING
+## Testing
 
 Please refer to the [TESTING.md](TESTING.md) file for all testing performed.
 
@@ -273,7 +270,7 @@ Please refer to the [TESTING.md](TESTING.md) file for all testing performed.
 - Cloudinary
 - Heroku
 
-## DEPLOYMENT
+## Deployment
 
 ### ElephantSQL
 1. Login to ElephantSQL, access the dashboard and create a new instance (input a name, choose tiny turtle, select a region).
@@ -369,7 +366,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 25. Go to settings in Heroku and perform a manual deployment and check for any issues.
 36. Go to Heroku settings, enable automatic deployments.
 
-## CREDITS
+## Credits
 - The Code Institute 'I Think, Therefore I Blog' walkthrough project assisted and guided in the setup and basic structure of this project.
 - The Stockbook Project by Massimo Ranalli assisted with the setup of the edit/delete functions for comments as well as the messaging alerts.
 - Code Institute Student Template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template).
@@ -382,7 +379,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 - The icons for the favicon, footer, about page and location headings were taken from [Font Awesome](https://fontawesome.com/).
 - The favicon image was converted using [Favicon.io](https://favicon.io/).
 
-## ACKNOWLEDGEMENTS
+## Acknowledgements
 - Thank you to my mentor for continuous helpful feedback and support throughout the project.
 - The tutors at Code Institute for their patience and support.
 - The Code Institute Slack community for tips and guidance.
