@@ -36,16 +36,12 @@ In considering the above, the below is the documentation of my testing process. 
 | Page | Result |
 | :--- | :--- |
 | [Home Page](#) | Pass |
-| [Service Page](#) | Pass |
-| [Cat Profile](#) | Pass |
-| [Cat Detail](#)| Pass |
-| [Edit Cat Page](#) | Pass |
-| [Delete Cat Page](#) | Pass |
-| [Booking Page](#) | Fail |
-| [My Bookings](#) | Pass |
-| [Checkout Page](#) | Pass |
-| [Checkout Success Page](#) | Pass |
-| [Error 404](#) | Pass |
+| [Plant Detail](#) | Pass |
+| [Edit Comment](#) | Pass |
+| [Sign In](#)| Pass |
+| [Login](#) | Pass |
+| [Logout](#) | Pass |
+| [Error 404](#) | Fail |
 
 **Please note:**
 - XX
@@ -56,8 +52,7 @@ In considering the above, the below is the documentation of my testing process. 
 
 | File | Result | 
 | :--- | :--- |
-| [static/base.css](#) | Pass |
-| [checkout/static/checkout.css](#) | Pass |
+| [static/css/style.css](#) | Pass |
 
 ### JavaScript
 
@@ -65,7 +60,7 @@ In considering the above, the below is the documentation of my testing process. 
 
 | File | Result |
 | :--- | :--- |
-| [checkout/static/stripe_elements.js](#) | Pass |
+| [static/js/script.js](#) | Pass |
 
 ### Python
 
@@ -74,28 +69,14 @@ In considering the above, the below is the documentation of my testing process. 
 | File | Result |
 | :--- | :--- |
 | [custom_storages.py](#)  | Pass | 
-| **PURRFECT SITTERS** |
-| [purrfect_sitters/urls.py](#) | Pass |  
-| **HOME** |
-| [home/views.py](#) | Pass | 
-| [home/urls.py](#) | Pass | 
-| **SERVICES** |
-| [service/models.py](#) | Pass | 
-| [service/views.py](#) | Pass | 
-| [service/admin.py](#) | Pass | 
-| [vservice/urls.py](#) | Pass |  
-| **CAT** |
-| [cat/models.py](#) | Pass | 
-| [cat/views.py](#) | Pass | 
-| [cat/urls.py](#) | Pass | 
-| [cat/admin.py](#) | Pass | 
-| [cat/forms.py](#) | Pass | 
-| **BOOKING** |
-| [booking/models.py](#) | Pass | 
-| [booking/views.py](#) | Pass | 
-| [booking/urls.py](#) | Pass | 
-| [booking/admin.py](#) | Pass | 
-| [booking/forms.py](#) | Pass | 
+| **STEAMAND LEAF** |
+| [stemandleaf/urls.py](#) | Pass |  
+| **BLOG** |
+| [blog/views.py](#) | Pass | 
+| [blog/models.py](#) | Pass | 
+| [blog/forms.py](#) | Pass |
+| [blog/urls.py](#) | Pass | 
+| [blog/admin.py](#) | Pass | 
 
 ## Visual (UI) Testing: Cross Browser and Cross Device Testing
 - The below combination of devices, browsers, and operating system were used to test the website. A range of viewport sizes were checked to see if users would have the same experience across multiple devices and browsers. Priority was given to mobile devices and tablets. 
@@ -122,10 +103,12 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 | Page | Result |
 | :--- | :--- |
 | Home Page | # |
-| Service Page | # |
-| Cat Profile | # |
-| Booking | # |
-| Checkout | # |
+| Plant Detail | # |
+| Edit Comment | # |
+| Delete Comment | # |
+| Sign up | # |
+| Login | # |
+| Error 404 | # |
 
 - Desktop performed well on all major pages of the site with minimal improvements needed.
 
@@ -134,10 +117,12 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 | Page | Result |
 | :--- | :--- |
 | Home Page | # |
-| Service Page | # |
-| Cat Profile | #|
-| Booking | # |
-| Checkout | # |
+| Plant Detail | # |
+| Edit Comment | # |
+| Delete Comment | # |
+| Sign up | # |
+| Login | # |
+| Error 404 | # |
 
 - XX
 - XX
@@ -146,16 +131,15 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 
 WAVE(Web Accessibility Evaluation Tool) allows developers to create content that is more accessible to users with disabilities. It does this by identifying accessibility and WGAC errors. The following pages were tested:
 
-| Page | Errors |
+| Page | Result |
 | :--- | :--- |
-| Home Page | 1 error|
-| Service Page | No errors |
-| Cat Profile | No errors |
-| Cat Detail| No errors |
-| Add Cat | No errors |
-| Edit Cat| No errors |
-| Booking | No errors |
-| Checkout | No errors |
+| Home Page | 1 error |
+| Plant Detail | # |
+| Edit Comment | # |
+| Delete Comment | # |
+| Sign up | # |
+| Login | # |
+| Error 404 | # |
 
 - XX
 
@@ -168,7 +152,7 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 ## Manual Testing
 
 ### Testing User Stories
-- Each completed user story on the [sprint backlog](#) was tested against the acceptance criteria, see the corresponding screenshots as evidence.
+- Each completed user story on the [sprint backlog](https://github.com/users/CaraMcAvinchey/projects/4) was tested against the acceptance criteria, see the corresponding screenshots as evidence.
 - This included reviewing each feature to check the usability, visual design and performance.
 
 (user stor ytesting table goes here)
