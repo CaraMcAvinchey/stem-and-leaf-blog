@@ -108,11 +108,13 @@ Cara McAvinchey
 ### Post List
 - The post list page was designed using cards to show a quick summary of each plant.
 - The user can click and find out more about a plant that interests them.
+
 <img width="636" alt="image" src="https://user-images.githubusercontent.com/97494262/209437372-83b2bc1e-68a0-4a75-8e86-d78b69df4a7d.png">
 
 ### Post Detail
 - Each blog post provides detail about the plant and a list of instructions to care for it. 
 - The registered user can also comment and like the post if desired.
+
 <img width="611" alt="image" src="https://user-images.githubusercontent.com/97494262/209437385-b8be9fe9-bbbb-4110-a9af-e0f5239f3cc9.png">
 
 ## FEATURES/STRUCTURE
@@ -129,6 +131,7 @@ Cara McAvinchey
 - This summary card is later repeated in each plant detail post for continuity across the site.
 
 <img width="276" alt="image" src="https://user-images.githubusercontent.com/97494262/210070669-031252b8-33af-4c74-9efe-17c2b4278235.png">
+
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/97494262/210070722-3dea018c-60c0-4793-847e-d4f9f2cacbdb.png">
 
 ### Plant Detail
@@ -212,6 +215,7 @@ Cara McAvinchey
 - Pending comments can be added so users are aware they are awaiting approval. 
 
 ## DATA MODEL
+
 <img width="718" alt="Screenshot 2023-06-08 at 19 30 04" src="https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/5fead75d-78fe-4ff8-ae46-ce7f02364242">
 
 - A relational database was designed and the data is represented above in an ERD with one custom models.
@@ -222,12 +226,14 @@ Cara McAvinchey
 
 <img width="220" alt="Screenshot 2023-06-08 at 19 32 53" src="https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/7917b0f8-ca4c-4487-a9b2-e8bcefd255e0">
 
+
 - [X] C - Site users can create/register their own profile to interact with the plant posts.
 - [X] R - Site users can open and read the plant blog posts for details and read comments from other users.
 - [X] U - Site users can like a post, updating the details and analytics for a plant detail post.
 - [X] D - Site users can eliminate their like if desired on a plant detail post.
 
 <img width="222" alt="Screenshot 2023-06-08 at 19 33 52" src="https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/3f649775-13f0-4126-a9ff-fc6ef85bdfb6">
+
 
 - [X] C - Site users can create their own comments using a validated form on each blog post.
 - [X] R - Site users can read comments from other users.
