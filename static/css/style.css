@@ -135,7 +135,7 @@ h6 {
 
 .btn-signup,
 .btn-edit {
-    background-color: #8B9569;
+    background-color: #747A57;
     color: #F8FBEB;
     margin: 2px;
 }
@@ -148,7 +148,8 @@ h6 {
 }
 
 .link {
-    color: #8B9569;
+    color: #747A57;
+    ;
     text-decoration: none;
 }
 
@@ -173,7 +174,7 @@ h6 {
 }
 
 .card-body a {
-    color: #8B9569;
+    color: #747A57;
     font-weight: bold;
     text-decoration: none;
 }
