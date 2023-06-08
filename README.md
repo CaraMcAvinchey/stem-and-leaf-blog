@@ -212,16 +212,24 @@ Cara McAvinchey
 - Pending comments can be added so users are aware they are awaiting approval. 
 
 ## DATA MODEL
-<img width="484" alt="image" src="https://user-images.githubusercontent.com/97494262/209538748-6f3cdc41-16c5-43ab-94a8-2341239ffc78.png">
+<img width="718" alt="Screenshot 2023-06-08 at 19 30 04" src="https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/5fead75d-78fe-4ff8-ae46-ce7f02364242">
+
+- A relational database was designed and the data is represented above in an ERD with one custom models.
+- The comment model was based off 'I think, therefore I Blog' walkthrough project.
+- The Plant model was customised according to the data needed for the Stem & Leaf blog concept.
+    - This included 2 choice fields for plant light and plant level.
+    - For plant thirst, this was represented as a decimal field.
+
+<img width="220" alt="Screenshot 2023-06-08 at 19 32 53" src="https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/7917b0f8-ca4c-4487-a9b2-e8bcefd255e0">
 
 - [X] C - Site users can create/register their own profile to interact with the plant posts.
-- [X] R - Site users can open and read the plant blog posts and read comments from other users.
+- [X] R - Site users can open and read the plant blog posts for details and read comments from other users.
 - [X] U - Site users can like a post, updating the details and analytics for a plant detail post.
 - [X] D - Site users can eliminate their like if desired on a plant detail post.
 
-<img width="477" alt="image" src="https://user-images.githubusercontent.com/97494262/209538824-f613791d-53b6-43e4-a305-f14a52026443.png">
+<img width="222" alt="Screenshot 2023-06-08 at 19 33 52" src="https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/3f649775-13f0-4126-a9ff-fc6ef85bdfb6">
 
-- [X] C - Site users can create their own comments using a form on each blog post.
+- [X] C - Site users can create their own comments using a validated form on each blog post.
 - [X] R - Site users can read comments from other users.
 - [X] U - Site users are able to update/edit their comments using a form.
 - [X] D - Site users are able to delete their comments.
