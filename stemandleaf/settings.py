@@ -33,7 +33,7 @@ DEBUG = 'DEV' in os.environ
 ALLOWED_HOSTS = [
     'stem-and-leaf-blog.herokuapp.com',
     'localhost',
-    '8000-caramcavinc-stemandleaf-7g24c4ejskh.ws-eu98.gitpod.io'
+    '8000-caramcavinc-stemandleaf-7g24c4ejskh.ws-eu99.gitpod.io'
     ]
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
