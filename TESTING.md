@@ -35,16 +35,13 @@ In considering the above, the below is the documentation of my testing process. 
 
 | Page | Result |
 | :--- | :--- |
-| [Home Page](#) | Pass |
-| [Plant Detail](#) | Pass |
-| [Edit Comment](#) | Pass |
-| [Sign In](#)| Pass |
-| [Login](#) | Pass |
-| [Logout](#) | Pass |
-| [Error 404](#) | Fail |
-
-**Please note:**
-- XX
+| [Home Page](documentation/testing/html/home.png) | Pass |
+| [Plant Detail](documentation/testing/html/plant_detail.png) | Pass |
+| [Edit Comment](documentation/testing/html/edit_comment.png) | Pass |
+| [Sign up](documentation/testing/html/signup.png)| Pass |
+| [Login](documentation/testing/html/login.png) | Pass |
+| [Logout](documentation/testing/html/logout.png) | Pass |
+| [Error 404](documentation/testing/html/error404.png) | Fail |
 
 ### CSS
 
@@ -52,7 +49,7 @@ In considering the above, the below is the documentation of my testing process. 
 
 | File | Result | 
 | :--- | :--- |
-| [static/css/style.css](#) | Pass |
+| [static/css/style.css](documentation/testing/css.png) | Pass |
 
 ### JavaScript
 
@@ -60,7 +57,7 @@ In considering the above, the below is the documentation of my testing process. 
 
 | File | Result |
 | :--- | :--- |
-| [static/js/script.js](#) | Pass |
+| [static/js/script.js](documentation/testing/js.png) | Pass |
 
 ### Python
 
@@ -68,15 +65,14 @@ In considering the above, the below is the documentation of my testing process. 
 
 | File | Result |
 | :--- | :--- |
-| [custom_storages.py](#)  | Pass | 
 | **STEAMAND LEAF** |
-| [stemandleaf/urls.py](#) | Pass |  
+| [stemandleaf/urls.py](documentation/testing/python/project_urls.png) | Pass |  
 | **BLOG** |
-| [blog/views.py](#) | Pass | 
-| [blog/models.py](#) | Pass | 
-| [blog/forms.py](#) | Pass |
-| [blog/urls.py](#) | Pass | 
-| [blog/admin.py](#) | Pass | 
+| [blog/views.py](documentation/testing/python/views.png) | Pass | 
+| [blog/models.py](documentation/testing/python/models.png) | Pass | 
+| [blog/forms.py](documentation/testing/python/forms.png) | Pass |
+| [blog/urls.py](documentation/testing/python/app_urls.png) | Pass | 
+| [blog/admin.py](documentation/testing/python/admin.png) | Pass | 
 
 ## Visual (UI) Testing: Cross Browser and Cross Device Testing
 - The below combination of devices, browsers, and operating system were used to test the website. A range of viewport sizes were checked to see if users would have the same experience across multiple devices and browsers. Priority was given to mobile devices and tablets. 
