@@ -1,6 +1,6 @@
 # Stem & Leaf - Testing Documentation
 
-**image here**
+![Screenshot 2023-06-08 at 20 40 58](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/411b58bf-5403-4186-b546-ea12e0b51a07)
 
 I recently had the opportunity to sit the ISTQB foundation level and used my new knowledge to follow the 7 testing principles:
 
@@ -41,7 +41,7 @@ In considering the above, the below is the documentation of my testing process. 
 | [Sign up](documentation/testing/html/signup.png)| Pass |
 | [Login](documentation/testing/html/login.png) | Pass |
 | [Logout](documentation/testing/html/logout.png) | Pass |
-| [Error 404](documentation/testing/html/error404.png) | Fail |
+| [Error 404](documentation/testing/html/error404.png) | Pass |
 
 ### CSS
 
@@ -98,13 +98,12 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 
 | Page | Result |
 | :--- | :--- |
-| Home Page | # |
-| Plant Detail | # |
-| Edit Comment | # |
-| Delete Comment | # |
-| Sign up | # |
-| Login | # |
-| Error 404 | # |
+| Home Page | ![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/ebca9a5b-1544-4d9d-99ce-8974f8d49df7) |
+| Plant Detail | ![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/7a0b842a-d9bb-4043-a241-f0b1463abfd1) |
+| Edit Comment | ![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/a63fbfb9-2540-4388-a02f-a265278c87f0) |
+| Delete Comment | ![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/247ab8df-7a5f-49dc-a9b7-d08964dfc462) |
+| Sign up |![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/8f2091da-ae4c-474f-8bd6-e065942f9c0e) |
+| Login | ![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/f0aa109a-8830-43bd-8812-5177f9ccc342) |
 
 - Desktop performed well on all major pages of the site with minimal improvements needed.
 
@@ -112,16 +111,16 @@ For the performance, accessibility, best practices and SEO of the site for mobil
 
 | Page | Result |
 | :--- | :--- |
-| Home Page | # |
-| Plant Detail | # |
-| Edit Comment | # |
-| Delete Comment | # |
-| Sign up | # |
-| Login | # |
-| Error 404 | # |
+| Home Page | ![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/20ada406-0037-4620-a467-d83f4be7195e) |
+| Plant Detail | ![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/d5c2a909-d6a9-407a-935a-7b00ed9d1ac8) |
+| Edit Comment | ![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/c56076ee-b356-446d-bdd6-31fa29db8c2c) |
+| Delete Comment | ![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/f1ceec54-84de-4805-9a03-76e3cf66c422) |
+| Sign up | ![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/b486a109-ccfe-433d-be6b-befec7fa67d3) |
+| Login | ![image](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/b9781ec2-66a3-4bc5-97e3-9528863aeeac) |
 
-- XX
-- XX
+- Mobile performance can improve, where performance was slower due to first contentful paint and largest contentful paint metrics.
+- This is a result of render-blocking resources mostly from Bootstrap and Cloudinary which requires further investigation to resolve.
+- More investigation needed to see if defer/async is a better option including code minification and seeing if moving the scripts out of the head would in base.html would affect the performance or not.
 
 ### Wave
 
@@ -129,15 +128,12 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 
 | Page | Result |
 | :--- | :--- |
-| Home Page | 1 error |
-| Plant Detail | # |
-| Edit Comment | # |
-| Delete Comment | # |
-| Sign up | # |
-| Login | # |
-| Error 404 | # |
+| [Home](documentation/testing/wave-home.png) | 0 errors |
+| [Plant Detail](documentation/testing/wave-home.png) | 0 errors  |
 
-- XX
+- The contrast errors found were tested and the dark green colour adjusted and retested:
+
+<img width="731" alt="210070268-17725578-409a-4278-a99e-60e844ddb1b8" src="https://github.com/CaraMcAvinchey/stem-and-leaf-blog/assets/97494262/adf13c93-8cbe-49ed-83f0-e4624f91c8a5">
 
 ## Automated Testing
 - Manual testing was done due to time constraints.
