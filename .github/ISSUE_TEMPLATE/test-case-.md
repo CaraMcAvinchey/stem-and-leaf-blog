@@ -1,7 +1,7 @@
 ---
 name: 'TEST CASE:'
 about: This is a default test case template.
-title: ''
+title: 'TEST CASE:'
 labels: TEST CASE
 assignees: ''
 
