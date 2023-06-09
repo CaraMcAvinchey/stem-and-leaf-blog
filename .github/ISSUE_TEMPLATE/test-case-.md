@@ -2,7 +2,7 @@
 name: 'TEST CASE:'
 about: This is a default test case template.
 title: ''
-labels: ''
+labels: TEST CASE
 assignees: ''
 
 ---
@@ -11,9 +11,9 @@ _As a site owner, I want to collect payment for sittings so I do not have to dea
 
 ## Acceptance Criteria
 **Scenario:** 
-Given I am on the Stripe Dashboard 
-When the customer makes a payment 
-Then I should see a successful payment displayed
+Given 
+When 
+Then
 
 URL: https://purrfect-sitters-service.herokuapp.com/checkout/105/
 
