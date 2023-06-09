@@ -167,4 +167,6 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 - There are no outstanding defects.
 
 ## Defects of Note
-- XX 
+- The user story for [OPEN A POST](https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/8) had multiple challenges including styling issues with the summary card, the likes/comments area and rendering of the plant detail model information. 
+ - The styling challenges were solved using margins and restructuring of some div elements.
+ - The comments/likes area required some guidance from my mentor to establish what the user sees when logged in, logged out and restructured the template from there.
