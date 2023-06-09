@@ -147,10 +147,24 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 - Each completed user story on the [sprint backlog](https://github.com/users/CaraMcAvinchey/projects/4) was tested against the acceptance criteria, see the corresponding screenshots as evidence.
 - This included reviewing each feature to check the usability, visual design and performance.
 
-(user stor ytesting table goes here)
+|  | USER STORY | TEST CASE | RESULT |
+|---|---|---|---|
+|  | As a **site user**, I can **register an account** so that **I can interact with blog posts**. |  | PASS |
+|  | As a **site user**, I can **view a list of posts** so that **I can select one to read**. |  | PASS |
+|  | As a **site user**, I can **click on a post** so that **I can read the full article** and find out more about plant care. |  | PASS |
+|  | As a **site user**, I can **view the number of likes on each post** so that **I can see which plants are popular.** |  | PASS |
+|  | As a **site user**, I can **like a post** so that **I can engage with the blog content**. |  | PASS |
+|  | As a **site user**, I can **view comments on a post** so that **I can read other user feedback**. |  | PASS |
+|  | As a **site user**, I can **leave comments on a post** so that **I can share my own feedback.** |  | PASS |
+|  | As a **site user**, I can **edit and delete my comments on a post** so that **I can customise or remove my thoughts** if required. |  | PASS |
+|  | As a **site user**, I can **return to the home page** of the blog if there is an error so that **I don’t get lost on the website**. |  | PASS |
+|  | In order to **create and control the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.** |  | PASS |
+|  | In order to **finish writing or publish content later** as an **admin user**, **I can create draft posts.** |  | PASS |
+|  | In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel. |  | PASS |
+|  | In order to **maintain a positive community atmosphere** as an **admin user**, **I can approve/disapprove comments.** |  | PASS |
 
 ## Outstanding Defects
-- XX
+- There are no outstanding defects.
 
 ## Defects of Note
 - XX 
