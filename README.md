@@ -1,4 +1,4 @@
-# STEM & LEAF - A PLANT CARE SPACE FOR BEGINNERS
+# Stem & Leaf - A Plant Care Space for Beginners
 
 ## Author
 Cara McAvinchey 
