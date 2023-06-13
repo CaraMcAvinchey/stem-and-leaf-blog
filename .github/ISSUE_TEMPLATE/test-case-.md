@@ -15,6 +15,13 @@ Given
 When 
 Then
 
+URL:
+
+## Expected Outcome
+[X] - 
+[X] -
+[X] -
+
 URL: https://purrfect-sitters-service.herokuapp.com/checkout/105/
 
 ## Test Data
