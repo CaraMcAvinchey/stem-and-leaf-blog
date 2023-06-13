@@ -149,19 +149,19 @@ WAVE(Web Accessibility Evaluation Tool) allows developers to create content that
 
 |  | USER STORY | TEST CASE | RESULT |
 |---|---|---|---|
-|  | As a **site user**, I can **register an account** so that **I can interact with blog posts**. |  | PASS |
-|  | As a **site user**, I can **view a list of posts** so that **I can select one to read**. |  | PASS |
-|  | As a **site user**, I can **click on a post** so that **I can read the full article** and find out more about plant care. |  | PASS |
-|  | As a **site user**, I can **view the number of likes on each post** so that **I can see which plants are popular.** |  | PASS |
-|  | As a **site user**, I can **like a post** so that **I can engage with the blog content**. |  | PASS |
-|  | As a **site user**, I can **view comments on a post** so that **I can read other user feedback**. |  | PASS |
-|  | As a **site user**, I can **leave comments on a post** so that **I can share my own feedback.** |  | PASS |
-|  | As a **site user**, I can **edit and delete my comments on a post** so that **I can customise or remove my thoughts** if required. |  | PASS |
-|  | As a **site user**, I can **return to the home page** of the blog if there is an error so that **I don’t get lost on the website**. |  | PASS |
-|  | In order to **create and control the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.** |  | PASS |
-|  | In order to **finish writing or publish content later** as an **admin user**, **I can create draft posts.** |  | PASS |
-|  | In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel. |  | PASS |
-|  | In order to **maintain a positive community atmosphere** as an **admin user**, **I can approve/disapprove comments.** |  | PASS |
+|  | As a **site user**, I can **register an account** so that **I can interact with blog posts**. | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/17 | PASS |
+|  | As a **site user**, I can **view a list of posts** so that **I can select one to read**. | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/18 | PASS |
+|  | As a **site user**, I can **click on a post** so that **I can read the full article** and find out more about plant care. | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/19 | PASS |
+|  | As a **site user**, I can **view the number of likes on each post** so that **I can see which plants are popular.** | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/20 | PASS |
+|  | As a **site user**, I can **like a post** so that **I can engage with the blog content**. | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/21 | PASS |
+|  | As a **site user**, I can **view comments on a post** so that **I can read other user feedback**. | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/22 | PASS |
+|  | As a **site user**, I can **leave comments on a post** so that **I can share my own feedback.** | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/23 | PASS |
+|  | As a **site user**, I can **edit and delete my comments on a post** so that **I can customise or remove my thoughts** if required. | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/24 | PASS |
+|  | As a **site user**, I can **return to the home page** of the blog if there is an error so that **I don’t get lost on the website**. | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/25 | PASS |
+|  | In order to **create and control the content for the blog** as an **admin user**, **I can access the admin panel using admin login details.** | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/26 | PASS |
+|  | In order to **finish writing or publish content later** as an **admin user**, **I can create draft posts.** | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/27 | PASS |
+|  | In order to **manage the blog content** as an **admin user**, **I can create, read, update and delete posts** using the admin panel. | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/28 | PASS |
+|  | In order to **maintain a positive community atmosphere** as an **admin user**, **I can approve/disapprove comments.** | https://github.com/CaraMcAvinchey/stem-and-leaf-blog/issues/29 | PASS |
 
 ## Outstanding Defects
 - There are no outstanding defects.
