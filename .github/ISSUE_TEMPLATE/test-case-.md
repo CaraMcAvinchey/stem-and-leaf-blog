@@ -18,15 +18,5 @@ Then
 URL:
 
 ## Expected Outcome
-[X] - 
-[X] -
-[X] -
-
-URL: https://purrfect-sitters-service.herokuapp.com/checkout/105/
-
-## Test Data
-4000 0025 0000 3155 0424 242 42424
-
-## Expected Outcome
 - [X] Checkout saved to the database and is linked to booking.
 - [X] Stripe picks up the payment
